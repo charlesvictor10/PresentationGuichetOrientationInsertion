@@ -1,6 +1,6 @@
 # PresentationGuichetOrientationInsertion
 
-__Description des projets__
+__Description du projet__
 
 __*Guichet de l'orientation et de l'insertion*__ est une plateforme de présentation des 5 modules qui composent le guichet. Elle sert de point d'entré à chaque module et permet également de faire une présentation générale du projet: les objectifs, les attentes, le but et les missions.
 
