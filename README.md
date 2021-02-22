@@ -6,7 +6,7 @@ __*Guichet de l'orientation et de l'insertion*__ est une plateforme de présenta
 
 __Pré-requis avant exécution__
 
-__*Installez et configuré le serveur d'hébergement. *__
+__*Installez et configurez le serveur d'hébergement. *__
 
 Pour l'installation merci de suivre les étapes suivantes:
 * Installer phpmyadmin dans votre serveur
