@@ -1,0 +1,289 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta atns *must* come first in the head; any other head content must come *after* these atns -->
+<meta name="description" content="">
+<meta name="author" content="">
+<title>Liven</title>
+<link href='https://fonts.googleapis.com/css?family=Arimo:400,700,700italic,400italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+<link href="css/master.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+<!--header-->
+<header>
+  <div class="header-white">
+    <div class="container">
+      <div class="row header-data">
+        <div class="col-md-2 col-xs-2 logo"><a href="../index.php"><img src="images/logo.png" alt="Logo Here" /></a></div>
+        <div class="col-md-8 pull-right">
+          <section class="top-bar-section">
+            <ul id="menu-main-menu-1">
+                  <li><a href="doc-map.html" class="active">Docs Map</a></li>
+                  <li><a href="doc-quick-guide.html">Quick Start Guide</a></li>
+                  <li><a href="doc-theme-structure.html">Theme Structure</a></li>
+            </ul>
+          </section>
+        </div>
+        <div class="clr"></div>
+      </div>
+    </div>
+  </div>
+  <!--fix header for mobile-->
+  <div class="fix-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2 col-xs-6 logo"><a href="../index.php"><img src="images/logo.png" alt="Logo Here" /></a></div>
+        <div class="col-xs-2 pull-right res-bar">
+          <nav class="nav is-fixed" role="navigation">
+            <button class="nav-toggle">
+            <span class="icon-menu"><span class="line line-1"></span><span class="line line-2"></span><span class="line line-3"></span></span>
+            </button>
+            <div class="nav-container">
+              <ul class="nav-menu menu">
+                <li class="menu-item"> <a href="doc-map.html" class="menu-link">Docs Map</a> </li>
+                <li class="menu-item"> <a href="doc-quick-guide.html" class="menu-link">Quick Start Guide</a></li>
+                <li class="menu-item"> <a href="doc-theme-structure.html" class="menu-link">Theme Structure</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="clr"></div>
+      </div>
+    </div>
+  </div>
+</header>
+<!--innertitle-->
+<div class="innerpagetitle">
+  <div class="container">
+    <h1><span>Docs - Email Script</span></h1>
+    <div class="innerbreadcrumb"> <a href="#">Home</a> / <a href="#">Doc</a> / <a href="#" class="activelink">Docs Email Script</a> </div>
+  </div>
+</div>
+<!--middle content-->
+<div class="middlecontent">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 quickguide">
+        <h2>Email Script</h2>
+        <div class="margin-bottom-30">
+          <ul class="list-disc">
+            <li><span class="yellow-txt-bg">footer-getintouch.php</span> - Footer get in touch <span class="yellow-txt-bg">.php</span> script send email</li>
+            <li><span class="yellow-txt-bg">Subscribesend.php</span> - Email Subscribe <span class="yellow-txt-bg">.php</span> script</li>
+            <li><span class="yellow-txt-bg">contactdatasend.php</span> - Contact data send <span class="yellow-txt-bg">.php</span> script</li>
+            
+          </ul>
+        </div>
+        <div class="margin-bottom-40">
+          <h3>Footer Get in Touch From script</h3>
+          <pre>
+<span class="cne">&lt;?php</span>
+    <span class='variable'>$ContactFullName</span> =<span class='variable'>$_POST</span>[<span class='cne'>'name'</span>];
+    <span class='variable'>$ContactEmail</span> = <span class='variable'>$_POST</span>[<span class='cne'>'emai'</span>];
+    <span class='variable'>$ContactNumber</span> = <span class='variable'>$_POST</span>[<span class='cne'>'numb'</span>];
+    <span class='variable'>$CompanyName</span> = <span class='variable'>$_POST</span>[<span class='cne'>'ccompany'</span>];
+    <span class='variable'>$ContactDescription</span> = <span class='identifier'>nl2br</span>(<span class='variable'>$_POST</span>[<span class='cne'>'cmsg'</span>]);
+    <span class='variable'>$headers</span>= <span class='cne'>"MIME-Version: 1.0\n"</span>;
+    <span class='variable'>$headers</span>.=<span class='cne'>"Content-type: text/html; charset=iso-8859-1\n"</span>;
+    <span class='variable'>$headers</span>.= <span class='cne'>"From: $ContactFullName &lt;$ContactEmail&gt;"</span>; <span class='com'>//FROM Email Address &amp; Name</span>
+    <span class='variable'>$subject</span> = <span class='cne'>"Contact From $ContactFullName"</span>; <span class='com'>// Email Subject Line</span>
+    <span class='variable'>$toemail</span> = <span class='cne'>"Your Email Address Here"</span>; <span class='com'>// to Email Address  </span>
+    <span class='variable'>$mailbody</span> = "<span class='cne'>&lt;table width=<span class='cne'>'600'</span> border=<span class='cne'>'0'</span> cellpadding=<span class='cne'>'3'</span> cellspacing=<span class='cne'>'3'</span>&gt;
+                  &lt;tr&gt;
+                    &lt;td colspan=<span class='cne'>'2'</span> align=<span class='cne'>'left'</span>&gt;&lt;font face=<span class='cne'>'Arial, Helvetica, sans-serif'</span> size=<span class='cne'>'4'</span>&gt;&lt;strong&gt;Contect request from  <span class='variable'>$ContactFullName</span>&lt;/strong&gt;&lt;/font&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                    &lt;td colspan=<span class='cne'>'2'</span> align=<span class='cne'>'center'</span>&gt;&lt;table width=<span class='cne'>'600'</span> cellpadding=<span class='cne'>'3'</span> cellspacing=<span class='cne'>'3'</span> border=<span class='cne'>'0'</span>&gt;
+                        &lt;tr&gt;
+                          &lt;td&gt;&lt;table width=<span class='cne'>'100%'</span> cellspacing=<span class='cne'>'0'</span> cellpadding=<span class='cne'>'12'</span> border=<span class='cne'>'1'</span> bordercolor=<span class='cne'>'#919191'</span>&gt;
+                              &lt;tr&gt;
+                                &lt;td width=<span class='cne'>'32%'</span> align=<span class='cne'>'right'</span>&gt;&lt;font face=<span class='cne'>'Arial, Helvetica, sans-serif'</span> size=<span class='cne'>'4'</span>&gt;Name :&lt;/font&gt;&lt;/td&gt;
+                                &lt;td width=<span class='cne'>'68%'</span> align=<span class='cne'>'left'</span>&gt;&lt;font face=<span class='cne'>'Arial, Helvetica, sans-serif'</span> size=<span class='cne'>'4'</span>&gt;<span class='variable'>$ContactFullName</span>&lt;/font&gt;&lt;/td&gt;
+                              &lt;/tr&gt;
+                              &lt;tr&gt;
+                                &lt;td align=<span class='cne'>'right'</span>&gt;&lt;font face=<span class='cne'>'Arial, Helvetica, sans-serif'</span> size=<span class='cne'>'4'</span>&gt;Email :&lt;/font&gt;&lt;/td&gt;
+                                &lt;td align=<span class='cne'>'left'</span>&gt;&lt;font face=<span class='cne'>'Arial, Helvetica, sans-serif'</span> size=<span class='cne'>'4'</span>&gt;<span class='variable'>$ContactEmail</span>&lt;/font&gt;&lt;/td&gt;
+                              &lt;/tr&gt;
+                              &lt;tr&gt;
+                                &lt;td align=<span class='cne'>'right'</span>&gt;&lt;font face=<span class='cne'>'Arial, Helvetica, sans-serif'</span> size=<span class='cne'>'4'</span>&gt;Contact  :&lt;/font&gt;&lt;/td&gt;
+                                &lt;td align=<span class='cne'>'left'</span>&gt;&lt;font face=<span class='cne'>'Arial, Helvetica, sans-serif'</span> size=<span class='cne'>'4'</span>&gt;<span class='variable'>$ContactNumber</span>&lt;/font&gt;&lt;/td&gt;
+                              &lt;/tr&gt;
+                              &lt;tr&gt;
+                                &lt;td align=<span class='cne'>'right'</span>&gt;&lt;font face=<span class='cne'>'Arial, Helvetica, sans-serif'</span> size=<span class='cne'>'4'</span>&gt;Company Name  :&lt;/font&gt;&lt;/td&gt;
+                                &lt;td align=<span class='cne'>'left'</span>&gt;&lt;font face=<span class='cne'>'Arial, Helvetica, sans-serif'</span> size=<span class='cne'>'4'</span>&gt;<span class='variable'>$CompanyName</span>&lt;/font&gt;&lt;/td&gt;
+                              &lt;/tr&gt;
+                              &lt;tr&gt;
+                                &lt;td align=<span class='cne'>'right'</span> valign=<span class='cne'>'top'</span>&gt;&lt;font face=<span class='cne'>'Arial, Helvetica, sans-serif'</span> size=<span class='cne'>'4'</span>&gt;Description :&lt;/font&gt;&lt;/td&gt;
+                                &lt;td align=<span class='cne'>'left'</span>&gt;&lt;font face=<span class='cne'>'Arial, Helvetica, sans-serif'</span> size=<span class='cne'>'4'</span>&gt;<span class='variable'>$ContactDescription</span>&lt;/font&gt;&lt;/td&gt;
+                                &lt;/tr&gt;
+                              &lt;/table&gt;&lt;/td&gt;
+                        &lt;/tr&gt;
+                      &lt;/table&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                &lt;/table&gt;</span>";
+    <span class='variable'>$sendmail</span> =<span class='identifier'>mail</span>(<span class='variable'>$toemail</span>,<span class='variable'>$subject</span>,<span class='variable'>$mailbody</span>,<span class='variable'>$headers</span>);
+    <span class='statement'>if</span>(<span class='variable'>$sendmail</span>)
+    {
+        <span class='statement'>echo</span> <span class='cne'>"1"</span>;
+    }
+    <span class='statement'>else</span>
+    {
+        <span class='statement'>echo</span> <span class='cne'>"0"</span>;
+    }
+<span class="cne">?&gt;</span>
+            </pre>
+        </div>
+        <div class="margin-bottom-40">
+          <h3>Email Subscribe script</h3>
+          <pre>
+<span class="cne">&lt;?php</span>
+    <span class='variable'>$ContactEmail</span> = <span class='variable'>$_POST</span>[<span class='cne'>'emai'</span>];
+    <span class='variable'>$headers</span>= <span class='cne'>"MIME-Version: 1.0\n"</span>;
+    <span class='variable'>$headers</span>.=<span class='cne'>"Content-type: text/html; charset=iso-8859-1\n"</span>;
+    <span class='variable'>$headers</span>.= <span class='cne'>"From: $ContactFullName &lt;$ContactEmail&gt;"</span>; <span class='com'>//FROM Email Address &amp; Name</span>
+    <span class='variable'>$subject</span> = <span class='cne'>"Contact From $ContactFullName"</span>; <span class='com'>// Email Subject Line</span>
+    <span class='variable'>$toemail</span> = <span class='cne'>"Your Email Address Here"</span>; <span class='com'>// to Email Address</span>
+    
+    <span class='variable'>$mailbody</span> = "<span class="cne">&lt;table width=<span class='cne'>'600'</span> border=<span class='cne'>'0'</span> cellpadding=<span class='cne'>'3'</span> cellspacing=<span class='cne'>'3'</span>&gt;
+                  &lt;tr&gt;
+                    &lt;td colspan=<span class='cne'>'2'</span> align=<span class='cne'>'left'</span>&gt;&lt;font face=<span class='cne'>'Arial, Helvetica, sans-serif'</span> size=<span class='cne'>'4'</span>&gt;&lt;strong&gt;Contect request from  <span class='variable'>$ContactFullName</span>&lt;/strong&gt;&lt;/font&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                    &lt;td colspan=<span class='cne'>'2'</span> align=<span class='cne'>'center'</span>&gt;&lt;table width=<span class='cne'>'600'</span> cellpadding=<span class='cne'>'3'</span> cellspacing=<span class='cne'>'3'</span> border=<span class='cne'>'0'</span>&gt;
+                        &lt;tr&gt;
+                          &lt;td&gt;&lt;table width=<span class='cne'>'100%'</span> cellspacing=<span class='cne'>'0'</span> cellpadding=<span class='cne'>'12'</span> border=<span class='cne'>'1'</span> bordercolor=<span class='cne'>'#919191'</span>&gt;
+                              &lt;tr&gt;
+                                &lt;td width=<span class='cne'>'32%'</span> align=<span class='cne'>'right'</span>&gt;&lt;font face=<span class='cne'>'Arial, Helvetica, sans-serif'</span> size=<span class='cne'>'4'</span>&gt;Name :&lt;/font&gt;&lt;/td&gt;
+                                &lt;td width=<span class='cne'>'68%'</span> align=<span class='cne'>'left'</span>&gt;&lt;font face=<span class='cne'>'Arial, Helvetica, sans-serif'</span> size=<span class='cne'>'4'</span>&gt;<span class='variable'>$ContactFullName</span>&lt;/font&gt;&lt;/td&gt;
+                              &lt;/tr&gt;
+                              &lt;tr&gt;
+                                &lt;td align=<span class='cne'>'right'</span>&gt;&lt;font face=<span class='cne'>'Arial, Helvetica, sans-serif'</span> size=<span class='cne'>'4'</span>&gt;Email :&lt;/font&gt;&lt;/td&gt;
+                                &lt;td align=<span class='cne'>'left'</span>&gt;&lt;font face=<span class='cne'>'Arial, Helvetica, sans-serif'</span> size=<span class='cne'>'4'</span>&gt;<span class='variable'>$ContactEmail</span>&lt;/font&gt;&lt;/td&gt;
+                              &lt;/tr&gt;
+                              &lt;tr&gt;
+                                &lt;td align=<span class='cne'>'right'</span>&gt;&lt;font face=<span class='cne'>'Arial, Helvetica, sans-serif'</span> size=<span class='cne'>'4'</span>&gt;Contact  :&lt;/font&gt;&lt;/td&gt;
+                                &lt;td align=<span class='cne'>'left'</span>&gt;&lt;font face=<span class='cne'>'Arial, Helvetica, sans-serif'</span> size=<span class='cne'>'4'</span>&gt;<span class='variable'>$ContactNumber</span>&lt;/font&gt;&lt;/td&gt;
+                              &lt;/tr&gt;
+                              &lt;tr&gt;
+                                &lt;td align=<span class='cne'>'right'</span>&gt;&lt;font face=<span class='cne'>'Arial, Helvetica, sans-serif'</span> size=<span class='cne'>'4'</span>&gt;Company Name  :&lt;/font&gt;&lt;/td&gt;
+                                &lt;td align=<span class='cne'>'left'</span>&gt;&lt;font face=<span class='cne'>'Arial, Helvetica, sans-serif'</span> size=<span class='cne'>'4'</span>&gt;<span class='variable'>$CompanyName</span>&lt;/font&gt;&lt;/td&gt;
+                              &lt;/tr&gt;
+                              &lt;tr&gt;
+                                &lt;td align=<span class='cne'>'right'</span> valign=<span class='cne'>'top'</span>&gt;&lt;font face=<span class='cne'>'Arial, Helvetica, sans-serif'</span> size=<span class='cne'>'4'</span>&gt;Description :&lt;/font&gt;&lt;/td&gt;
+                                &lt;td align=<span class='cne'>'left'</span>&gt;&lt;font face=<span class='cne'>'Arial, Helvetica, sans-serif'</span> size=<span class='cne'>'4'</span>&gt;<span class='variable'>$ContactDescription</span>&lt;/font&gt;&lt;/td&gt;
+                                &lt;/tr&gt;
+                              &lt;/table&gt;&lt;/td&gt;
+                        &lt;/tr&gt;
+                      &lt;/table&gt;&lt;/td&gt;
+                  &lt;/tr&gt;
+                &lt;/table&gt;</span>";
+    
+    <span class='variable'>$sendmail</span> =<span class='identifier'>mail</span>(<span class='variable'>$toemail</span>,<span class='variable'>$subject</span>,<span class='variable'>$mailbody</span>,<span class='variable'>$headers</span>);
+    <span class='statement'>if</span>(<span class='variable'>$sendmail</span>)
+    {
+        <span class='statement'>echo</span> <span class='cne'>"1"</span>;
+    }
+    <span class='statement'>else</span>
+    {
+        <span class='statement'>echo</span> <span class='cne'>"0"</span>;
+    }
+<span class="cne">?&gt;</span>
+            </pre>
+        </div>
+        <div class="margin-bottom-40">
+          <h3>Contact form script</h3>
+          <pre>
+<span class="cne">&lt;?php</span>          
+        <span class='variable'>$ContactFullName</span> =<span class='variable'>$_POST</span>[<span class='cne'>'name'</span>];
+        <span class='variable'>$ContactEmail</span> = <span class='variable'>$_POST</span>[<span class='cne'>'emai'</span>];
+        <span class='variable'>$ContactNumber</span> = <span class='variable'>$_POST</span>[<span class='cne'>'numb'</span>];
+        <span class='variable'>$CompanyName</span> = <span class='variable'>$_POST</span>[<span class='cne'>'ccompany'</span>];
+        <span class='variable'>$cfbudget</span> = <span class='variable'>$_POST</span>[<span class='cne'>'cfbudget'</span>];
+        <span class='variable'>$ContactDescription</span> = <span class='identifier'>nl2br</span>(<span class='variable'>$_POST</span>[<span class='cne'>'cmsg'</span>]);
+        <span class='variable'>$headers</span>= <span class='cne'>"MIME-Version: 1.0\n"</span>;
+        <span class='variable'>$headers</span>.=<span class='cne'>"Content-type: text/html; charset=iso-8859-1\n"</span>;
+        <span class='variable'>$headers</span>.= <span class='cne'>"From: $ContactFullName &lt;$ContactEmail&gt;"</span>; <span class='com'>//FROM Email Address &amp; Name</span>
+        <span class='variable'>$subject</span> = <span class='cne'>"Contact From $ContactFullName"</span>; <span class='com'>// Email Subject Line</span>
+        <span class='variable'>$toemail</span> = <span class='cne'>"Your Email Address Here"</span>; <span class='com'>// to Email Address  </span>
+        <span class='variable'>$mailbody</span> = "<span class="cne">&lt;table width=<span class='cne'>'600'</span> border=<span class='cne'>'0'</span> cellpadding=<span class='cne'>'3'</span> cellspacing=<span class='cne'>'3'</span>&gt;
+                      &lt;tr&gt;
+                        &lt;td colspan=<span class='cne'>'2'</span> align=<span class='cne'>'left'</span>&gt;&lt;font face=<span class='cne'>'Arial, Helvetica, sans-serif'</span> size=<span class='cne'>'4'</span>&gt;&lt;strong&gt;Contect request from  <span class='variable'>$ContactFullName</span>&lt;/strong&gt;&lt;/font&gt;&lt;/td&gt;
+                      &lt;/tr&gt;
+                      &lt;tr&gt;
+                        &lt;td colspan=<span class='cne'>'2'</span> align=<span class='cne'>'center'</span>&gt;&lt;table width=<span class='cne'>'600'</span> cellpadding=<span class='cne'>'3'</span> cellspacing=<span class='cne'>'3'</span> border=<span class='cne'>'0'</span>&gt;
+                            &lt;tr&gt;
+                              &lt;td&gt;&lt;table width=<span class='cne'>'100%'</span> cellspacing=<span class='cne'>'0'</span> cellpadding=<span class='cne'>'12'</span> border=<span class='cne'>'1'</span> bordercolor=<span class='cne'>'#919191'</span>&gt;
+                                  &lt;tr&gt;
+                                    &lt;td width=<span class='cne'>'32%'</span> align=<span class='cne'>'right'</span>&gt;&lt;font face=<span class='cne'>'Arial, Helvetica, sans-serif'</span> size=<span class='cne'>'4'</span>&gt;Name :&lt;/font&gt;&lt;/td&gt;
+                                    &lt;td width=<span class='cne'>'68%'</span> align=<span class='cne'>'left'</span>&gt;&lt;font face=<span class='cne'>'Arial, Helvetica, sans-serif'</span> size=<span class='cne'>'4'</span>&gt;<span class='variable'>$ContactFullName</span>&lt;/font&gt;&lt;/td&gt;
+                                  &lt;/tr&gt;
+                                  &lt;tr&gt;
+                                    &lt;td align=<span class='cne'>'right'</span>&gt;&lt;font face=<span class='cne'>'Arial, Helvetica, sans-serif'</span> size=<span class='cne'>'4'</span>&gt;Email :&lt;/font&gt;&lt;/td&gt;
+                                    &lt;td align=<span class='cne'>'left'</span>&gt;&lt;font face=<span class='cne'>'Arial, Helvetica, sans-serif'</span> size=<span class='cne'>'4'</span>&gt;<span class='variable'>$ContactEmail</span>&lt;/font&gt;&lt;/td&gt;
+                                  &lt;/tr&gt;
+                                  &lt;tr&gt;
+                                    &lt;td align=<span class='cne'>'right'</span>&gt;&lt;font face=<span class='cne'>'Arial, Helvetica, sans-serif'</span> size=<span class='cne'>'4'</span>&gt;Contact  :&lt;/font&gt;&lt;/td&gt;
+                                    &lt;td align=<span class='cne'>'left'</span>&gt;&lt;font face=<span class='cne'>'Arial, Helvetica, sans-serif'</span> size=<span class='cne'>'4'</span>&gt;<span class='variable'>$ContactNumber</span>&lt;/font&gt;&lt;/td&gt;
+                                  &lt;/tr&gt;
+                                  &lt;tr&gt;
+                                    &lt;td align=<span class='cne'>'right'</span>&gt;&lt;font face=<span class='cne'>'Arial, Helvetica, sans-serif'</span> size=<span class='cne'>'4'</span>&gt;Company Name  :&lt;/font&gt;&lt;/td&gt;
+                                    &lt;td align=<span class='cne'>'left'</span>&gt;&lt;font face=<span class='cne'>'Arial, Helvetica, sans-serif'</span> size=<span class='cne'>'4'</span>&gt;<span class='variable'>$CompanyName</span>&lt;/font&gt;&lt;/td&gt;
+                                  &lt;/tr&gt;
+                                  &lt;tr&gt;
+                                    &lt;td align=<span class='cne'>'right'</span>&gt;&lt;font face=<span class='cne'>'Arial, Helvetica, sans-serif'</span> size=<span class='cne'>'4'</span>&gt;Your Budget  :&lt;/font&gt;&lt;/td&gt;
+                                    &lt;td align=<span class='cne'>'left'</span>&gt;&lt;font face=<span class='cne'>'Arial, Helvetica, sans-serif'</span> size=<span class='cne'>'4'</span>&gt;<span class='variable'>$cfbudget</span>&lt;/font&gt;&lt;/td&gt;
+                                  &lt;/tr&gt;
+                                  &lt;tr&gt;
+                                    &lt;td align=<span class='cne'>'right'</span> valign=<span class='cne'>'top'</span>&gt;&lt;font face=<span class='cne'>'Arial, Helvetica, sans-serif'</span> size=<span class='cne'>'4'</span>&gt;Description :&lt;/font&gt;&lt;/td&gt;
+                                    &lt;td align=<span class='cne'>'left'</span>&gt;&lt;font face=<span class='cne'>'Arial, Helvetica, sans-serif'</span> size=<span class='cne'>'4'</span>&gt;<span class='variable'>$ContactDescription</span>&lt;/font&gt;&lt;/td&gt;
+                                    &lt;/tr&gt;
+                                  &lt;/table&gt;&lt;/td&gt;
+                            &lt;/tr&gt;
+                          &lt;/table&gt;&lt;/td&gt;
+                      &lt;/tr&gt;
+                    &lt;/table&gt;</span>";
+        
+        <span class='variable'>$sendmail</span> =<span class='identifier'>mail</span>(<span class='variable'>$toemail</span>,<span class='variable'>$subject</span>,<span class='variable'>$mailbody</span>,<span class='variable'>$headers</span>);
+        <span class='statement'>if</span>(<span class='variable'>$sendmail</span>)
+        {
+            <span class='statement'>echo</span> <span class='cne'>"1"</span>;
+        }
+        <span class='statement'>else</span>
+        {
+            <span class='statement'>echo</span> <span class='cne'>"0"</span>;
+        }
+<span class="cne">?&gt;</span>         
+</pre>          
+          		
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--footer-->
+<div class="backtotop"><a href="#0" class="cd-top">Top</a></div>
+<script type="text/javascript" src="js/jquery-1.11.2.js"></script> 
+<script type="text/javascript" src="js/function.js"></script> 
+<script type="text/javascript" src="js/bootstrap.js"></script> 
+<script type="text/javascript" src="js/modernizr.js"></script> 
+<script type="text/javascript" src="js/slick.js"></script> 
+<script type="text/javascript" src="js/stickyheader.js"></script> 
+<script type="text/javascript" src="js/mega-dropdown.js"></script> 
+<script type="text/javascript" src="js/backtotop.js"></script> 
+<script type="text/javascript" src="js/parallax.js"></script> 
+<script type="text/javascript" src="js/animation.js"></script> 
+<script type="text/javascript" src="js/counter.js"></script> 
+<script type="text/javascript" src="js/number-counter.js"></script> 
+<script type="text/javascript" src="js/tooltip-viewport.js"></script> 
+<script type="text/javascript" src="js/ie10-viewport-bug-workaround.js"></script>
+<script type="text/javascript" src="js/bootstrapValidator.js"></script>
+<script type="text/javascript" src="js/formValidation.js"></script>
+
+</body>
+</html>

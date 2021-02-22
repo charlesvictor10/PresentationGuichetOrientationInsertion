@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<meta name="description" content="">
+<meta name="author" content="">
+<title>Liven</title>
+<link href='https://fonts.googleapis.com/css?family=Arimo:400,700,700italic,400italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+<link href="css/master.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+<!--header-->
+<header>
+  <div class="header-white">
+    <div class="container">
+      <div class="row header-data">
+        <div class="col-md-2 col-xs-2 logo"><a href="../index.php"><img src="images/logo.png" alt="Logo Here" /></a></div>
+        <div class="col-md-8 pull-right">
+          <section class="top-bar-section">
+            <ul id="menu-main-menu-1">
+              <li><a href="doc-map.html" class="active">Docs Map</a></li>
+              <li><a href="doc-quick-guide.html">Quick Start Guide</a></li>
+              <li><a href="doc-theme-structure.html">Theme Structure</a></li>
+            </ul>
+          </section>
+        </div>
+        <div class="clr"></div>
+      </div>
+    </div>
+  </div>
+  <!--fix header for mobile-->
+  <div class="fix-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2 col-xs-6 logo"><a href="../index.php"><img src="images/logo.png" alt="Logo Here" /></a></div>
+        <div class="col-xs-2 pull-right res-bar">
+          <nav class="nav is-fixed" role="navigation">
+            <button class="nav-toggle"> <span class="icon-menu"><span class="line line-1"></span><span class="line line-2"></span><span class="line line-3"></span></span> </button>
+            <div class="nav-container">
+              <ul class="nav-menu menu">
+                <li class="menu-item"> <a href="doc-map.html" class="menu-link">Docs Map</a> </li>
+                <li class="menu-item"> <a href="doc-quick-guide.html" class="menu-link">Quick Start Guide</a></li>
+                <li class="menu-item"> <a href="doc-theme-structure.html" class="menu-link">Theme Structure</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="clr"></div>
+      </div>
+    </div>
+  </div>
+</header>
+<!--innertitle-->
+<div class="innerpagetitle">
+  <div class="container">
+    <h1><span>Docs - Popup</span></h1>
+    <div class="innerbreadcrumb"> <a href="#">Home</a> / <a href="#">Doc</a> / <a href="#" class="activelink">Docs - Popup</a> </div>
+  </div>
+</div>
+<!--middle content-->
+<div class="middlecontent">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 popupmodel">
+        <h2>Popup Style</h2>
+        <button data-target="#myModal" data-toggle="modal" class="btn-regular btn-black btn-effect" type="button"> Launch demo model </button>
+        <!-- Modal -->
+        <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="myModal" class="modal fade" style="display: none;">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button aria-label="Close" data-dismiss="modal" class="close" type="button"><span aria-hidden="true"><i class="fa fa-close icons-white"></i></span></button>
+                <h4 id="myModalLabel" class="modal-title">Modal title here</h4>
+              </div>
+              <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <pre class="margin-top-30"><code data-lang="html" class="language-html">    <span class="c">&lt;!-- Button trigger modal --&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-lg"</span> <span class="na">data-toggle=</span><span class="s">"modal"</span> <span class="na">data-target=</span><span class="s">"#myModal"</span><span class="nt">&gt;</span>
+      Launch demo modal
+    <span class="nt">&lt;/button&gt;</span>
+    <span class="c">&lt;!-- Modal --&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal fade"</span> <span class="na">id=</span><span class="s">"myModal"</span> <span class="na">tabindex=</span><span class="s">"-1"</span> <span class="na">role=</span><span class="s">"dialog"</span> <span class="na">aria-labelledby=</span><span class="s">"myModalLabel"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-dialog"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-content"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-header"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"close"</span> <span class="na">data-dismiss=</span><span class="s">"modal"</span> <span class="na">aria-label=</span><span class="s">"Close"</span><span class="nt">&gt;&lt;span</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span><span class="ni">&amp;times;</span><span class="nt">&lt;/span&gt;&lt;/button&gt;</span>
+            <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"modal-title"</span> <span class="na">id=</span><span class="s">"myModalLabel"</span><span class="nt">&gt;</span>Modal title<span class="nt">&lt;/h4&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-body"</span><span class="nt">&gt;</span>
+            <span class="c">&lt;!-- Content Here --&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span></code></pre>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--footer-->
+<div class="backtotop"><a href="#0" class="cd-top">Top</a></div>
+<script type="text/javascript" src="js/jquery-1.11.2.js"></script> 
+<script type="text/javascript" src="js/function.js"></script> 
+<script type="text/javascript" src="js/bootstrap.js"></script> 
+<script type="text/javascript" src="js/modernizr.js"></script> 
+<script type="text/javascript" src="js/slick.js"></script> 
+<script type="text/javascript" src="js/stickyheader.js"></script> 
+<script type="text/javascript" src="js/mega-dropdown.js"></script> 
+<script type="text/javascript" src="js/backtotop.js"></script> 
+<script type="text/javascript" src="js/parallax.js"></script> 
+<script type="text/javascript" src="js/animation.js"></script> 
+<script type="text/javascript" src="js/counter.js"></script> 
+<script type="text/javascript" src="js/number-counter.js"></script> 
+<script type="text/javascript" src="js/tooltip-viewport.js"></script> 
+<script type="text/javascript" src="js/ie10-viewport-bug-workaround.js"></script> 
+<script type="text/javascript" src="js/bootstrapValidator.js"></script> 
+<script type="text/javascript" src="js/formValidation.js"></script> 
+</body>
+</html>

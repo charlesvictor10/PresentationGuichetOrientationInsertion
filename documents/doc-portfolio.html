@@ -1,0 +1,434 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<meta name="description" content="">
+<meta name="author" content="">
+<title>Liven</title>
+<link href='https://fonts.googleapis.com/css?family=Arimo:400,700,700italic,400italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+<link href="css/master.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<!--header-->
+<header>
+  <div class="header-white">
+    <div class="container">
+      <div class="row header-data">
+        <div class="col-md-2 col-xs-2 logo"><a href="../index.php"><img src="images/logo.png" alt="Logo Here" /></a></div>
+        <div class="col-md-8 pull-right">
+          <section class="top-bar-section">
+            <ul id="menu-main-menu-1">
+                  <li><a href="doc-map.html" class="active">Docs Map</a></li>
+                  <li><a href="doc-quick-guide.html">Quick Start Guide</a></li>
+                  <li><a href="doc-theme-structure.html">Theme Structure</a></li>
+            </ul>
+          </section>
+        </div>
+        <div class="clr"></div>
+      </div>
+    </div>
+  </div>
+  <!--fix header for mobile-->
+  <div class="fix-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2 col-xs-6 logo"><a href="../index.php"><img src="images/logo.png" alt="Logo Here" /></a></div>
+        <div class="col-xs-2 pull-right res-bar">
+          <nav class="nav is-fixed" role="navigation">
+            <button class="nav-toggle">
+            <span class="icon-menu"><span class="line line-1"></span><span class="line line-2"></span><span class="line line-3"></span></span>
+            </button>
+            <div class="nav-container">
+              <ul class="nav-menu menu">
+                <li class="menu-item"> <a href="doc-map.html" class="menu-link">Docs Map</a> </li>
+                <li class="menu-item"> <a href="doc-quick-guide.html" class="menu-link">Quick Start Guide</a></li>
+                <li class="menu-item"> <a href="doc-theme-structure.html" class="menu-link">Theme Structure</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="clr"></div>
+      </div>
+    </div>
+  </div>
+</header>
+<!--innertitle-->
+<div class="innerpagetitle">
+  <div class="container">
+    <h1><span>Docs - Portfolio</span></h1>
+    <div class="innerbreadcrumb"> <a href="#">Home</a> / <a href="#">Doc</a> / <a href="#" class="activelink">Docs Portfolio</a> </div>
+  </div>
+</div>
+<!--middle content-->
+<div class="middlecontent">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 quickguide">
+        <div class="margin-bottom-30">
+        <p>We have provided five portfolio styles. You can also create your own portfolio style.</p>
+          <p>To create portfolio style, you need to use <span class="yellow-txt-bg">portfolio.css</span>, <span class="yellow-txt-bg">hover.css</span> and <span class="yellow-txt-bg">jquery.portfolio.js</span>.</p>
+        </div>
+        <div class="margin-bottom-30">
+          <h2>Breakpoints for Different Devices</h2>
+          <strong>Breakpoint	Size in pixels</strong>
+          <div class="row">
+            <div class="col-xs-2">
+              <table class="table">
+                <tr>
+                  <td>XS</td>
+                  <td>480 - 767</td>
+                </tr>
+                <tr>
+                  <td>SM</td>
+                  <td>768 - 991</td>
+                </tr>
+                <tr>
+                  <td>MD</td>
+                  <td>992 - 1139</td>
+                </tr>
+                <tr>
+                  <td>LG</td>
+                  <td>&gt;= 1170</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="margin-bottom-30">
+          <h2>Options for grid rows and columns size classes</h2>
+          <ul class="list-disc">
+            <li> <span class="yellow-txt-bg">.row</span> - creates grid row </li>
+            <li> <span class="yellow-txt-bg">.portfoliobox</span> - creates grid column that uses 100% of parent width on <strong>lg</strong> and larger screens. </li>
+            <li> <span class="yellow-txt-bg">.portfoliobox3</span> - creates grid column that uses 100% of parent width on <strong>lg</strong> and larger screens. </li>
+            <li> <span class="yellow-txt-bg">.portfoliobox4</span> - creates grid column portfolio <strong>lg</strong> and larger screens. </li>
+            <li> <span class="yellow-txt-bg">.portfoliobox5</span> - creates grid column takes 50% of parent width on <strong>lg</strong> and larger screens. </li>
+          </ul>
+        </div>
+        <div class="margin-bottom-30">
+          <h2>Portfolio Example Here</h2>
+          <a class="btn-regular btn-blue btn-effect" href="../portfolio1.html" target="_blank">Portfolio 1</a>
+          <a class="btn-regular btn-blue btn-effect" href="../portfolio2.html"  target="_blank">Portfolio 2</a>
+          <a class="btn-regular btn-blue btn-effect" href="../portfolio3.html"  target="_blank">Portfolio 3</a>
+          <a class="btn-regular btn-blue btn-effect" href="../portfolio4.html"  target="_blank">Portfolio 4</a>
+          <a class="btn-regular btn-blue btn-effect" href="../portfolio5.html"  target="_blank">Portfolio 5</a>
+         </div>
+        <div class="margin-bottom-30">
+          <h2>Portfolio 1</h2>
+       	  <pre class="codeprint">
+                  <code class="tagelement">
+      <span class="com">&lt;!-- Your Html structure  --&gt;</span>
+      <span class="tagelement">&lt;div</span><span class="tagelement"></span> <span class="atn">class</span><span class="atn">=</span><span class="cne">"portfolioFilter"</span><span class="tagelement">&gt;</span>
+        <span class="tagelement">&lt;ul</span><span class="tagelement"></span><span class="tagelement">&gt;</span>
+           <span class="tagelement">&lt;li</span><span class="tagelement"></span><span class="tagelement">&gt;</span><span class="tagelement">&lt;a</span><span class="tagelement"></span> <span class="atn">href</span><span class="atn">=</span><span class="cne">"#"</span> <span class="atn">data-filter</span><span class="atn">=</span><span class="cne">"*"</span><span class="tagelement">&gt;</span><span class="txtc">All</span><span class="tagelement">&lt;/a</span>&gt;<span class="tagelement">&lt;/li</span>&gt;
+           <span class="tagelement">&lt;li</span><span class="tagelement"></span><span class="tagelement">&gt;</span><span class="tagelement">&lt;a</span><span class="tagelement"></span> <span class="atn">href</span><span class="atn">=</span><span class="cne">"#"</span> <span class="atn">data-filter</span><span class="atn">=</span><span class="cne">".mobapp"</span><span class="tagelement">&gt;</span><span class="txtc">MobilApp</span><span class="tagelement">&lt;/a</span>&gt;<span class="tagelement">&lt;/li</span>&gt;
+           <span class="tagelement">&lt;li</span><span class="tagelement"></span><span class="tagelement">&gt;</span><span class="tagelement">&lt;a</span><span class="tagelement"></span> <span class="atn">href</span><span class="atn">=</span><span class="cne">"#"</span> <span class="atn">data-filter</span><span class="atn">=</span><span class="cne">".html"</span><span class="tagelement">&gt;</span><span class="txtc">Html5</span><span class="tagelement">&lt;/a</span>&gt;<span class="tagelement">&lt;/li</span>&gt;
+           <span class="tagelement">&lt;li</span><span class="tagelement"></span><span class="tagelement">&gt;</span><span class="tagelement">&lt;a</span><span class="tagelement"></span> <span class="atn">href</span><span class="atn">=</span><span class="cne">"#"</span> <span class="atn">data-filter</span><span class="atn">=</span><span class="cne">".css3"</span><span class="tagelement">&gt;</span><span class="txtc">css</span><span class="tagelement">&lt;/a</span>&gt;<span class="tagelement">&lt;/li</span>&gt;
+        <span class="tagelement">&lt;/ul</span>&gt;
+      <span class="tagelement">&lt;/div</span>&gt;
+      <span class="com">&lt;!-- Your Html filter portfolio container structure --&gt;</span>
+      <span class="tagelement">&lt;div</span><span class="tagelement"></span> <span class="atn">class</span><span class="atn">=</span><span class="cne">"portfoliodiv"</span><span class="tagelement">&gt;</span>
+      
+      <span class="tagelement">&lt;div</span><span class="tagelement"></span> <span class="atn">class</span><span class="atn">=</span><span class="cne">"mobapp text-center portfoliobox"</span><span class="tagelement">&gt;</span>
+      	<span class="tagelement">&lt;div</span><span class="tagelement"></span> <span class="atn">class</span><span class="atn">=</span><span class="cne">"portfolio1"</span><span class="tagelement">&gt;</span>
+           &lt;img <span class="atn">src=</span><span class='cne'>"Image path here"</span>&gt;
+           <span class="tagelement">&lt;div</span><span class="tagelement"></span> <span class="atn">class</span><span class="atn">=</span><span class="cne">"mask-img"</span><span class="tagelement">&gt;</span>
+           	   <span class="tagelement">&lt;div</span><span class="tagelement"></span> <span class="atn">class</span><span class="atn">=</span><span class="cne">"zoomicon"</span><span class="tagelement">&gt;</span>
+			&lt;img <span class="atn">src=</span><span class='cne'>"Icon image path here"</span>&gt;
+        	    <span class="tagelement">&lt;/div</span>&gt;
+           <span class="tagelement">&lt;/div</span>&gt;        
+        <span class="tagelement">&lt;/div</span>&gt; 
+        <span class="tagelement">&lt;div</span><span class="tagelement"></span> <span class="atn">class</span><span class="atn">=</span><span class="cne">"portfoliotitle"</span><span class="tagelement">&gt;</span>
+             &lt;<span class="tagelement">h3</span>&gt;<span class="com">&lt;!-- title goes here --&gt;</span>&lt;<span class="tagelement">/h3</span>&gt;
+             &lt;<span class="tagelement">span</span>&gt;<span class="com">&lt;!-- catagory name goes here --&gt;</span>&lt;<span class="tagelement">/span</span>&gt;
+        <span class="tagelement">&lt;/div</span>&gt;      
+      <span class="tagelement">&lt;/div</span>&gt;
+      
+      <span class="tagelement">&lt;div</span><span class="tagelement"></span> <span class="atn">class</span><span class="atn">=</span><span class="cne">"html text-center portfoliobox"</span><span class="tagelement">&gt;</span>
+      	<span class="tagelement">&lt;div</span><span class="tagelement"></span> <span class="atn">class</span><span class="atn">=</span><span class="cne">"portfolio1"</span><span class="tagelement">&gt;</span>
+           &lt;img <span class="atn">src=</span><span class='cne'>"Image path here"</span>&gt;
+           <span class="tagelement">&lt;div</span><span class="tagelement"></span> <span class="atn">class</span><span class="atn">=</span><span class="cne">"mask-img"</span><span class="tagelement">&gt;</span>
+           	   <span class="tagelement">&lt;div</span><span class="tagelement"></span> <span class="atn">class</span><span class="atn">=</span><span class="cne">"zoomicon"</span><span class="tagelement">&gt;</span>
+			&lt;img <span class="atn">src=</span><span class='cne'>"Icon image path here"</span>&gt;
+        	    <span class="tagelement">&lt;/div</span>&gt;
+           <span class="tagelement">&lt;/div</span>&gt;        
+        <span class="tagelement">&lt;/div</span>&gt; 
+        <span class="tagelement">&lt;div</span><span class="tagelement"></span> <span class="atn">class</span><span class="atn">=</span><span class="cne">"portfoliotitle"</span><span class="tagelement">&gt;</span>
+             &lt;<span class="tagelement">h3</span>&gt;<span class="com">&lt;!-- title goes here --&gt;</span>&lt;<span class="tagelement">/h3</span>&gt;
+             &lt;<span class="tagelement">span</span>&gt;<span class="com">&lt;!-- catagory name goes here --&gt;</span>&lt;<span class="tagelement">/span</span>&gt;   
+        <span class="tagelement">&lt;/div</span>&gt;      
+      <span class="tagelement">&lt;/div</span>&gt; 
+      
+      <span class="tagelement">&lt;div</span><span class="tagelement"></span> <span class="atn">class</span><span class="atn">=</span><span class="cne">"css text-center portfoliobox"</span><span class="tagelement">&gt;</span>
+      	<span class="tagelement">&lt;div</span><span class="tagelement"></span> <span class="atn">class</span><span class="atn">=</span><span class="cne">"portfolio1"</span><span class="tagelement">&gt;</span>
+           &lt;img <span class="atn">src=</span><span class='cne'>"Image path here"</span>&gt;
+           <span class="tagelement">&lt;div</span><span class="tagelement"></span> <span class="atn">class</span><span class="atn">=</span><span class="cne">"mask-img"</span><span class="tagelement">&gt;</span>
+           	   <span class="tagelement">&lt;div</span><span class="tagelement"></span> <span class="atn">class</span><span class="atn">=</span><span class="cne">"zoomicon"</span><span class="tagelement">&gt;</span>
+			&lt;img <span class="atn">src=</span><span class='cne'>"Icon image path here"</span>&gt;
+        	    <span class="tagelement">&lt;/div</span>&gt;
+           <span class="tagelement">&lt;/div</span>&gt;        
+        <span class="tagelement">&lt;/div</span>&gt; 
+        <span class="tagelement">&lt;div</span><span class="tagelement"></span> <span class="atn">class</span><span class="atn">=</span><span class="cne">"portfoliotitle"</span><span class="tagelement">&gt;</span>  
+            &lt;<span class="tagelement">h3</span>&gt;<span class="com">&lt;!-- title goes here --&gt;</span>&lt;<span class="tagelement">/h3</span>&gt;
+            &lt;<span class="tagelement">span</span>&gt;<span class="com">&lt;!-- catagory name goes here --&gt;</span>&lt;<span class="tagelement">/span</span>&gt;
+        <span class="tagelement">&lt;/div</span>&gt;      
+      <span class="tagelement">&lt;/div</span>&gt;   
+      <span class="tagelement">&lt;/div</span>&gt;
+                    </code>
+                 </pre>
+        </div>
+        <div class="margin-bottom-30">
+          <h2>Portfolio 2</h2>
+       	  <pre class="codeprint">
+                  <code class="tagelement">
+      <span class="com">&lt;!-- Your Html structure  --&gt;</span>
+      <span class="tagelement">&lt;div</span><span class="tagelement"></span> <span class="atn">class</span><span class="atn">=</span><span class="cne">"portfolioFilter"</span><span class="tagelement">&gt;</span>
+        <span class="tagelement">&lt;ul</span><span class="tagelement"></span><span class="tagelement">&gt;</span>
+           <span class="tagelement">&lt;li</span><span class="tagelement"></span><span class="tagelement">&gt;</span><span class="tagelement">&lt;a</span><span class="tagelement"></span> <span class="atn">href</span><span class="atn">=</span><span class="cne">"#"</span> <span class="atn">data-filter</span><span class="atn">=</span><span class="cne">"*"</span><span class="tagelement">&gt;</span><span class="txtc">All</span><span class="tagelement">&lt;/a</span>&gt;<span class="tagelement">&lt;/li</span>&gt;
+           <span class="tagelement">&lt;li</span><span class="tagelement"></span><span class="tagelement">&gt;</span><span class="tagelement">&lt;a</span><span class="tagelement"></span> <span class="atn">href</span><span class="atn">=</span><span class="cne">"#"</span> <span class="atn">data-filter</span><span class="atn">=</span><span class="cne">".mobapp"</span><span class="tagelement">&gt;</span><span class="txtc">MobilApp</span><span class="tagelement">&lt;/a</span>&gt;<span class="tagelement">&lt;/li</span>&gt;
+           <span class="tagelement">&lt;li</span><span class="tagelement"></span><span class="tagelement">&gt;</span><span class="tagelement">&lt;a</span><span class="tagelement"></span> <span class="atn">href</span><span class="atn">=</span><span class="cne">"#"</span> <span class="atn">data-filter</span><span class="atn">=</span><span class="cne">".html"</span><span class="tagelement">&gt;</span><span class="txtc">Html5</span><span class="tagelement">&lt;/a</span>&gt;<span class="tagelement">&lt;/li</span>&gt;
+           <span class="tagelement">&lt;li</span><span class="tagelement"></span><span class="tagelement">&gt;</span><span class="tagelement">&lt;a</span><span class="tagelement"></span> <span class="atn">href</span><span class="atn">=</span><span class="cne">"#"</span> <span class="atn">data-filter</span><span class="atn">=</span><span class="cne">".css3"</span><span class="tagelement">&gt;</span><span class="txtc">css</span><span class="tagelement">&lt;/a</span>&gt;<span class="tagelement">&lt;/li</span>&gt;
+        <span class="tagelement">&lt;/ul</span>&gt;
+      <span class="tagelement">&lt;/div</span>&gt;
+      <span class="com">&lt;!-- Your Html filter portfolio container structure --&gt;</span>
+      <span class="tagelement">&lt;div</span><span class="tagelement"></span> <span class="atn">class</span><span class="atn">=</span><span class="cne">"portfoliodiv"</span><span class="tagelement">&gt;</span>
+      
+      <span class="tagelement">&lt;div</span><span class="tagelement"></span> <span class="atn">class</span><span class="atn">=</span><span class="cne">"mobapp text-center portfoliobox"</span><span class="tagelement">&gt;</span>
+      	<span class="tagelement">&lt;div</span><span class="tagelement"></span> <span class="atn">class</span><span class="atn">=</span><span class="cne">"portfolio2"</span><span class="tagelement">&gt;</span>
+           &lt;img <span class="atn">src=</span><span class='cne'>"Image path here"</span>&gt;
+           <span class="tagelement">&lt;div</span><span class="tagelement"></span> <span class="atn">class</span><span class="atn">=</span><span class="cne">"mask-img"</span><span class="tagelement">&gt;</span>
+           	   &lt;<span class="tagelement">h4</span>&gt;<span class="com">&lt;!-- title goes here --&gt;</span>&lt;<span class="tagelement">/h4</span>&gt;
+                 &lt;<span class="tagelement">span</span>&gt;<span class="com">&lt;!-- catagory name goes here --&gt;</span>&lt;<span class="tagelement">/span</span>&gt;
+           <span class="tagelement">&lt;/div</span>&gt;        
+        <span class="tagelement">&lt;/div</span>&gt; 
+      <span class="tagelement">&lt;/div</span>&gt;
+      
+      <span class="tagelement">&lt;div</span><span class="tagelement"></span> <span class="atn">class</span><span class="atn">=</span><span class="cne">"html text-center portfoliobox"</span><span class="tagelement">&gt;</span>
+      	<span class="tagelement">&lt;div</span><span class="tagelement"></span> <span class="atn">class</span><span class="atn">=</span><span class="cne">"portfolio2"</span><span class="tagelement">&gt;</span>
+           &lt;img <span class="atn">src=</span><span class='cne'>"Image path here"</span>&gt;
+           <span class="tagelement">&lt;div</span><span class="tagelement"></span> <span class="atn">class</span><span class="atn">=</span><span class="cne">"mask-img"</span><span class="tagelement">&gt;</span>
+           	   &lt;<span class="tagelement">h4</span>&gt;<span class="com">&lt;!-- title goes here --&gt;</span>&lt;<span class="tagelement">/h4</span>&gt;
+                 &lt;<span class="tagelement">span</span>&gt;<span class="com">&lt;!-- catagory name goes here --&gt;</span>&lt;<span class="tagelement">/span</span>&gt;
+           <span class="tagelement">&lt;/div</span>&gt;        
+        <span class="tagelement">&lt;/div</span>&gt; 
+      <span class="tagelement">&lt;/div</span>&gt;
+      
+      <span class="tagelement">&lt;div</span><span class="tagelement"></span> <span class="atn">class</span><span class="atn">=</span><span class="cne">"css3 text-center portfoliobox"</span><span class="tagelement">&gt;</span>
+      	<span class="tagelement">&lt;div</span><span class="tagelement"></span> <span class="atn">class</span><span class="atn">=</span><span class="cne">"portfolio2"</span><span class="tagelement">&gt;</span>
+           &lt;img <span class="atn">src=</span><span class='cne'>"Image path here"</span>&gt;
+           <span class="tagelement">&lt;div</span><span class="tagelement"></span> <span class="atn">class</span><span class="atn">=</span><span class="cne">"mask-img"</span><span class="tagelement">&gt;</span>
+           	   &lt;<span class="tagelement">h4</span>&gt;<span class="com">&lt;!-- title goes here --&gt;</span>&lt;<span class="tagelement">/h4</span>&gt;
+                 &lt;<span class="tagelement">span</span>&gt;<span class="com">&lt;!-- catagory name goes here --&gt;</span>&lt;<span class="tagelement">/span</span>&gt;
+           <span class="tagelement">&lt;/div</span>&gt;        
+        <span class="tagelement">&lt;/div</span>&gt; 
+      <span class="tagelement">&lt;/div</span>&gt;
+      <span class="tagelement">&lt;/div</span>&gt;
+                    </code>
+                 </pre>
+        </div>
+        
+        <div class="margin-bottom-30">
+          <h2>Portfolio 3 - Full Width</h2>
+       	  <pre class="codeprint">
+                  <code class="tagelement">
+      <span class="com">&lt;!-- Your Html structure  --&gt;</span>
+      <span class="tagelement">&lt;div</span><span class="tagelement"></span> <span class="atn">class</span><span class="atn">=</span><span class="cne">"portfolioFilter"</span><span class="tagelement">&gt;</span>
+        <span class="tagelement">&lt;ul</span><span class="tagelement"></span><span class="tagelement">&gt;</span>
+           <span class="tagelement">&lt;li</span><span class="tagelement"></span><span class="tagelement">&gt;</span><span class="tagelement">&lt;a</span><span class="tagelement"></span> <span class="atn">href</span><span class="atn">=</span><span class="cne">"#"</span> <span class="atn">data-filter</span><span class="atn">=</span><span class="cne">"*"</span><span class="tagelement">&gt;</span><span class="txtc">All</span><span class="tagelement">&lt;/a</span>&gt;<span class="tagelement">&lt;/li</span>&gt;
+           <span class="tagelement">&lt;li</span><span class="tagelement"></span><span class="tagelement">&gt;</span><span class="tagelement">&lt;a</span><span class="tagelement"></span> <span class="atn">href</span><span class="atn">=</span><span class="cne">"#"</span> <span class="atn">data-filter</span><span class="atn">=</span><span class="cne">".mobapp"</span><span class="tagelement">&gt;</span><span class="txtc">MobilApp</span><span class="tagelement">&lt;/a</span>&gt;<span class="tagelement">&lt;/li</span>&gt;
+           <span class="tagelement">&lt;li</span><span class="tagelement"></span><span class="tagelement">&gt;</span><span class="tagelement">&lt;a</span><span class="tagelement"></span> <span class="atn">href</span><span class="atn">=</span><span class="cne">"#"</span> <span class="atn">data-filter</span><span class="atn">=</span><span class="cne">".html"</span><span class="tagelement">&gt;</span><span class="txtc">Html5</span><span class="tagelement">&lt;/a</span>&gt;<span class="tagelement">&lt;/li</span>&gt;
+           <span class="tagelement">&lt;li</span><span class="tagelement"></span><span class="tagelement">&gt;</span><span class="tagelement">&lt;a</span><span class="tagelement"></span> <span class="atn">href</span><span class="atn">=</span><span class="cne">"#"</span> <span class="atn">data-filter</span><span class="atn">=</span><span class="cne">".css3"</span><span class="tagelement">&gt;</span><span class="txtc">css</span><span class="tagelement">&lt;/a</span>&gt;<span class="tagelement">&lt;/li</span>&gt;
+        <span class="tagelement">&lt;/ul</span>&gt;
+      <span class="tagelement">&lt;/div</span>&gt;
+      <span class="com">&lt;!-- Your Html filter portfolio container structure --&gt;</span>
+      <span class="tagelement">&lt;div</span><span class="tagelement"></span> <span class="atn">class</span><span class="atn">=</span><span class="cne">"portfoliodiv"</span><span class="tagelement">&gt;</span>
+      
+      <span class="tagelement">&lt;div</span><span class="tagelement"></span> <span class="atn">class</span><span class="atn">=</span><span class="cne">"mobapp text-center portfoliobox3"</span><span class="tagelement">&gt;</span>
+      	<span class="tagelement">&lt;div</span><span class="tagelement"></span> <span class="atn">class</span><span class="atn">=</span><span class="cne">"portfolio3"</span><span class="tagelement">&gt;</span>
+           &lt;img <span class="atn">src=</span><span class='cne'>"Image path here"</span>&gt;
+           <span class="tagelement">&lt;div</span><span class="tagelement"></span> <span class="atn">class</span><span class="atn">=</span><span class="cne">"mask-img"</span><span class="tagelement">&gt;</span>
+                <span class="tagelement">&lt;div</span><span class="tagelement"></span> <span class="atn">class</span><span class="atn">=</span><span class="cne">"zoomicn"</span><span class="tagelement">&gt;</span>&lt;img <span class="atn">src</span><span class="atn">=</span><span class="cne">"<span class="com">Icon path here</span>"</span>&gt;<span class="tagelement">&lt;/div</span>&gt;
+                &lt;<span class="tagelement">h4</span>&gt;<span class="com">&lt;!-- title goes here --&gt;</span>&lt;<span class="tagelement">/h4</span>&gt;
+                &lt;<span class="tagelement">span</span>&gt;<span class="com">&lt;!-- catagory name goes here --&gt;</span>&lt;<span class="tagelement">/span</span>&gt;
+           <span class="tagelement">&lt;/div</span>&gt; 
+        <span class="tagelement">&lt;/div</span>&gt; 
+      <span class="tagelement">&lt;/div</span>&gt;
+      
+      <span class="tagelement">&lt;div</span><span class="tagelement"></span> <span class="atn">class</span><span class="atn">=</span><span class="cne">"html text-center portfoliobox3"</span><span class="tagelement">&gt;</span>
+      	<span class="tagelement">&lt;div</span><span class="tagelement"></span> <span class="atn">class</span><span class="atn">=</span><span class="cne">"portfolio3"</span><span class="tagelement">&gt;</span>
+           &lt;img <span class="atn">src=</span><span class='cne'>"Image path here"</span>&gt;
+              <span class="tagelement">&lt;div</span><span class="tagelement"></span> <span class="atn">class</span><span class="atn">=</span><span class="cne">"mask-img"</span><span class="tagelement">&gt;</span>
+                <span class="tagelement">&lt;div</span><span class="tagelement"></span> <span class="atn">class</span><span class="atn">=</span><span class="cne">"zoomicn"</span><span class="tagelement">&gt;</span>&lt;img <span class="atn">src</span><span class="atn">=</span><span class="cne">"<span class="com">Icon path here</span>"</span>&gt;<span class="tagelement">&lt;/div</span>&gt;
+                &lt;<span class="tagelement">h4</span>&gt;<span class="com">&lt;!-- title goes here --&gt;</span>&lt;<span class="tagelement">/h4</span>&gt;
+                &lt;<span class="tagelement">span</span>&gt;<span class="com">&lt;!-- catagory name goes here --&gt;</span>&lt;<span class="tagelement">/span</span>&gt;
+           <span class="tagelement">&lt;/div</span>&gt; 
+        <span class="tagelement">&lt;/div</span>&gt; 
+      <span class="tagelement">&lt;/div</span>&gt;
+      
+      <span class="tagelement">&lt;div</span><span class="tagelement"></span> <span class="atn">class</span><span class="atn">=</span><span class="cne">"css3 text-center portfoliobox3"</span><span class="tagelement">&gt;</span>
+      	<span class="tagelement">&lt;div</span><span class="tagelement"></span> <span class="atn">class</span><span class="atn">=</span><span class="cne">"portfolio3"</span><span class="tagelement">&gt;</span>
+          &lt;img <span class="atn">src=</span><span class='cne'>"Image path here"</span>&gt;
+           <span class="tagelement">&lt;div</span><span class="tagelement"></span> <span class="atn">class</span><span class="atn">=</span><span class="cne">"mask-img"</span><span class="tagelement">&gt;</span>
+                <span class="tagelement">&lt;div</span><span class="tagelement"></span> <span class="atn">class</span><span class="atn">=</span><span class="cne">"zoomicn"</span><span class="tagelement">&gt;</span>&lt;img <span class="atn">src</span><span class="atn">=</span><span class="cne">"<span class="com">Icon path here</span>"</span>&gt;<span class="tagelement">&lt;/div</span>&gt;
+                &lt;<span class="tagelement">h4</span>&gt;<span class="com">&lt;!-- title goes here --&gt;</span>&lt;<span class="tagelement">/h4</span>&gt;
+                &lt;<span class="tagelement">span</span>&gt;<span class="com">&lt;!-- catagory name goes here --&gt;</span>&lt;<span class="tagelement">/span</span>&gt;
+           <span class="tagelement">&lt;/div</span>&gt; 
+        <span class="tagelement">&lt;/div</span>&gt; 
+      <span class="tagelement">&lt;/div</span>&gt;
+
+      <span class="tagelement">&lt;/div</span>&gt;
+                    </code>
+                 </pre>
+        </div>
+        <div class="margin-bottom-30">
+          <h2>Portfolio 4 - Masonary Grid</h2>
+       	  <pre class="codeprint">
+                  <code class="tagelement">
+     <span class="tagelement">&lt;div</span><span class="tagelement"></span> <span class="atn">class</span><span class="atn">=</span><span class="cne">"filter"</span><span class="tagelement">&gt;</span>
+        <span class="tagelement">&lt;ul</span><span class="tagelement"></span><span class="tagelement">&gt;</span>
+           <span class="tagelement">&lt;li</span><span class="tagelement"></span><span class="tagelement">&gt;</span><span class="tagelement">&lt;a</span><span class="tagelement"></span> <span class="atn">href</span><span class="atn">=</span><span class="cne">"#"</span> <span class="atn">data-filter</span><span class="atn">=</span><span class="cne">"*"</span><span class="tagelement">&gt;</span><span class="txtc">All</span><span class="tagelement">&lt;/a</span>&gt;<span class="tagelement">&lt;/li</span>&gt;
+           <span class="tagelement">&lt;li</span><span class="tagelement"></span><span class="tagelement">&gt;</span><span class="tagelement">&lt;a</span><span class="tagelement"></span> <span class="atn">href</span><span class="atn">=</span><span class="cne">"#"</span> <span class="atn">data-filter</span><span class="atn">=</span><span class="cne">".mobapp"</span><span class="tagelement">&gt;</span><span class="txtc">MobilApp</span><span class="tagelement">&lt;/a</span>&gt;<span class="tagelement">&lt;/li</span>&gt;
+           <span class="tagelement">&lt;li</span><span class="tagelement"></span><span class="tagelement">&gt;</span><span class="tagelement">&lt;a</span><span class="tagelement"></span> <span class="atn">href</span><span class="atn">=</span><span class="cne">"#"</span> <span class="atn">data-filter</span><span class="atn">=</span><span class="cne">".html"</span><span class="tagelement">&gt;</span><span class="txtc">Html5</span><span class="tagelement">&lt;/a</span>&gt;<span class="tagelement">&lt;/li</span>&gt;
+           <span class="tagelement">&lt;li</span><span class="tagelement"></span><span class="tagelement">&gt;</span><span class="tagelement">&lt;a</span><span class="tagelement"></span> <span class="atn">href</span><span class="atn">=</span><span class="cne">"#"</span> <span class="atn">data-filter</span><span class="atn">=</span><span class="cne">".css3"</span><span class="tagelement">&gt;</span><span class="txtc">css</span><span class="tagelement">&lt;/a</span>&gt;<span class="tagelement">&lt;/li</span>&gt;
+        <span class="tagelement">&lt;/ul</span>&gt;
+      <span class="tagelement">&lt;/div</span>&gt;
+      <span class="com">&lt;!-- Your Html filter portfolio container structure --&gt;</span>
+      <span class="tagelement">&lt;div</span><span class="tagelement"></span> <span class="atn">class</span><span class="atn">=</span><span class="cne">"portfoliodiv4"</span><span class="tagelement">&gt;</span>
+      
+      <span class="tagelement">&lt;div</span><span class="tagelement"></span> <span class="atn">class</span><span class="atn">=</span><span class="cne">"mobapp portfoliobox4"</span><span class="tagelement">&gt;</span>
+      	<span class="tagelement">&lt;div</span><span class="tagelement"></span> <span class="atn">class</span><span class="atn">=</span><span class="cne">"portfolio4"</span><span class="tagelement">&gt;</span>
+           &lt;img <span class="atn">src=</span><span class='cne'>"Image path here"</span>&gt;
+           <span class="tagelement">&lt;div</span><span class="tagelement"></span> <span class="atn">class</span><span class="atn">=</span><span class="cne">"mask-img"</span><span class="tagelement">&gt;</span>
+                <span class="tagelement">&lt;div</span><span class="tagelement"></span> <span class="atn">class</span><span class="atn">=</span><span class="cne">"hvrlink"</span><span class="tagelement">&gt;</span>
+                    &lt;img <span class="atn">src</span><span class="atn">=</span><span class="cne">"<span class="com">Icon path here</span>"</span>&gt;
+                    &lt;<span class="tagelement">h4</span>&gt;<span class="com">&lt;!-- title goes here --&gt;</span>&lt;<span class="tagelement">/h4</span>&gt;
+                    &lt;<span class="tagelement">span</span>&gt;<span class="com">&lt;!-- catagory name goes here --&gt;</span>&lt;<span class="tagelement">/span</span>&gt;
+                <span class="tagelement">&lt;/div</span>&gt;
+           <span class="tagelement">&lt;/div</span>&gt; 
+        <span class="tagelement">&lt;/div</span>&gt; 
+      <span class="tagelement">&lt;/div</span>&gt;
+      
+      <span class="tagelement">&lt;div</span><span class="tagelement"></span> <span class="atn">class</span><span class="atn">=</span><span class="cne">"html portfoliobox4"</span><span class="tagelement">&gt;</span>
+      	<span class="tagelement">&lt;div</span><span class="tagelement"></span> <span class="atn">class</span><span class="atn">=</span><span class="cne">"portfolio4"</span><span class="tagelement">&gt;</span>
+           &lt;img <span class="atn">src=</span><span class='cne'>"Image path here"</span>&gt;
+           <span class="tagelement">&lt;div</span><span class="tagelement"></span> <span class="atn">class</span><span class="atn">=</span><span class="cne">"mask-img"</span><span class="tagelement">&gt;</span>
+                <span class="tagelement">&lt;div</span><span class="tagelement"></span> <span class="atn">class</span><span class="atn">=</span><span class="cne">"hvrlink"</span><span class="tagelement">&gt;</span>
+                    &lt;img <span class="atn">src</span><span class="atn">=</span><span class="cne">"<span class="com">Icon path here</span>"</span>&gt;
+                    &lt;<span class="tagelement">h4</span>&gt;<span class="com">&lt;!-- title goes here --&gt;</span>&lt;<span class="tagelement">/h4</span>&gt;
+                    &lt;<span class="tagelement">span</span>&gt;<span class="com">&lt;!-- catagory name goes here --&gt;</span>&lt;<span class="tagelement">/span</span>&gt;
+                <span class="tagelement">&lt;/div</span>&gt;
+           <span class="tagelement">&lt;/div</span>&gt; 
+        <span class="tagelement">&lt;/div</span>&gt; 
+      <span class="tagelement">&lt;/div</span>&gt;
+      
+      <span class="tagelement">&lt;div</span><span class="tagelement"></span> <span class="atn">class</span><span class="atn">=</span><span class="cne">"css3 portfoliobox4"</span><span class="tagelement">&gt;</span>
+      	<span class="tagelement">&lt;div</span><span class="tagelement"></span> <span class="atn">class</span><span class="atn">=</span><span class="cne">"portfolio4"</span><span class="tagelement">&gt;</span>
+           &lt;img <span class="atn">src=</span><span class='cne'>"Image path here"</span>&gt;
+           <span class="tagelement">&lt;div</span><span class="tagelement"></span> <span class="atn">class</span><span class="atn">=</span><span class="cne">"mask-img"</span><span class="tagelement">&gt;</span>
+                <span class="tagelement">&lt;div</span><span class="tagelement"></span> <span class="atn">class</span><span class="atn">=</span><span class="cne">"hvrlink"</span><span class="tagelement">&gt;</span>
+                    &lt;img <span class="atn">src</span><span class="atn">=</span><span class="cne">"<span class="com">Icon path here</span>"</span>&gt;
+                    &lt;<span class="tagelement">h4</span>&gt;<span class="com">&lt;!-- title goes here --&gt;</span>&lt;<span class="tagelement">/h4</span>&gt;
+                    &lt;<span class="tagelement">span</span>&gt;<span class="com">&lt;!--  name goes here --&gt;</span>&lt;<span class="tagelement">/span</span>&gt;
+                <span class="tagelement">&lt;/div</span>&gt;
+           <span class="tagelement">&lt;/div</span>&gt; 
+        <span class="tagelement">&lt;/div</span>&gt; 
+      <span class="tagelement">&lt;/div</span>&gt;
+
+      <span class="tagelement">&lt;/div</span>&gt;
+                    </code>
+                 </pre>
+        </div>
+        
+        <div class="margin-bottom-30">
+          <h2>Portfolio 5 - Timeline Grid</h2>
+       	  <pre class="codeprint">
+           <code class="tagelement">
+    <span class="tagelement">&lt;div</span><span class="tagelement"></span> <span class="atn">class</span><span class="atn">=</span><span class="cne">"portfoliotimeline"</span><span class="tagelement">&gt;</span>
+      <span class="tagelement">&lt;div</span><span class="tagelement"></span> <span class="atn">class</span><span class="atn">=</span><span class="cne">"portfoliocenter"</span><span class="tagelement">&gt;</span>
+        &lt;div <span class="atn">class=</span><span class='cne'>"monthtitle"</span>&gt;<span class="txtc">March 2014</span>&lt;/div&gt;
+        &lt;div <span class="atn">class=</span><span class='cne'>"clearfix"</span>&gt;&lt;/div&gt;
+        &lt;div <span class="atn">class=</span><span class='cne'>"portfoliobox5"</span>&gt;
+            &lt;a <span class="atn">href=</span><span class='cne'>"#"</span>&gt;
+                &lt;h3 <span class="atn">class=</span><span class='cne'>"text-right"</span>&gt;&lt;strong&gt;<span class="txtc">Date here</span>&lt;/strong&gt; <span class="txtc">Month Name here</span> &lt;/h3&gt;
+                &lt;div <span class="atn">class=</span><span class='cne'>"portfolio5"</span>&gt;
+                    &lt;img <span class="atn">src=</span><span class='cne'>"Images path here"</span>&gt;
+                    &lt;div <span class="atn">class=</span><span class='cne'>"mask-img"</span>&gt;
+                        &lt;img <span class="atn">src=</span><span class='cne'>"Images path here"</span>&gt;
+                        &lt;h4&gt;<span class="com">&lt;!-- title goes here --&gt;</span>&lt;/h4&gt;
+                        &lt;span&gt;<span class="com">&lt;!-- catagory name here --&gt;</span>&lt;/span&gt;        
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div <span class="atn">class=</span><span class='cne'>"portfoliobox5"</span>&gt;
+            &lt;a <span class="atn">href=</span><span class='cne'>"#"</span>&gt;
+                &lt;h3 <span class="atn">class=</span><span class='cne'>"text-left"</span>&gt;&lt;strong&gt;<span class="txtc">Date here</span>&lt;/strong&gt; <span class="txtc">Month Name here</span> &lt;/h3&gt;
+                &lt;div <span class="atn">class=</span><span class='cne'>"portfolio5"</span>&gt;
+                    &lt;img <span class="atn">src=</span><span class='cne'>"Images path here"</span>&gt;
+                    &lt;div <span class="atn">class=</span><span class='cne'>"mask-img"</span>&gt;
+                        &lt;img <span class="atn">src=</span><span class='cne'>"Images path here"</span>&gt;
+                        &lt;h4&gt;<span class="com">&lt;!-- title goes here --&gt;</span>&lt;/h4&gt;
+                        &lt;span&gt;<span class="com">&lt;!-- catagory name here --&gt;</span>&lt;/span&gt;        
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div <span class="atn">class=</span><span class='cne'>"portfoliobox5"</span>&gt;
+            &lt;a <span class="atn">href=</span><span class='cne'>"#"</span>&gt;
+                &lt;h3 <span class="atn">class=</span><span class='cne'>"text-right"</span>&gt;&lt;strong&gt;<span class="txtc">Date here</span>&lt;/strong&gt; <span class="txtc">Month Name here</span> &lt;/h3&gt;
+                &lt;div <span class="atn">class=</span><span class='cne'>"portfolio5"</span>&gt;
+                    &lt;img <span class="atn">src=</span><span class='cne'>"Images path here"</span>&gt;
+                    &lt;div <span class="atn">class=</span><span class='cne'>"mask-img"</span>&gt;
+                        &lt;img <span class="atn">src=</span><span class='cne'>"Images path here"</span>&gt;
+                        &lt;h4&gt;<span class="com">&lt;!-- title goes here --&gt;</span>&lt;/h4&gt;
+                        &lt;span&gt;<span class="com">&lt;!-- catagory name here --&gt;</span>&lt;/span&gt;        
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div <span class="atn">class=</span><span class='cne'>"portfoliobox5"</span>&gt;
+            &lt;a <span class="atn">href=</span><span class='cne'>"#"</span>&gt;
+                &lt;h3 <span class="atn">class=</span><span class='cne'>"text-left"</span>&gt;&lt;strong&gt;<span class="txtc">Date here</span>&lt;/strong&gt; <span class="txtc">Month Name here</span> &lt;/h3&gt;
+                &lt;div <span class="atn">class=</span><span class='cne'>"portfolio5"</span>&gt;
+                    &lt;img <span class="atn">src=</span><span class='cne'>"Images path here"</span>&gt;
+                    &lt;div <span class="atn">class=</span><span class='cne'>"mask-img"</span>&gt;
+                        &lt;img <span class="atn">src=</span><span class='cne'>"Images path here"</span>&gt;
+                        &lt;h4&gt;<span class="com">&lt;!-- title goes here --&gt;</span>&lt;/h4&gt;
+                        &lt;span&gt;<span class="com">&lt;!-- catagory name here --&gt;</span>&lt;/span&gt;        
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/a&gt;
+        &lt;/div&gt;
+       <span class="tagelement">&lt;/div</span>&gt;
+    <span class="tagelement">&lt;/div</span>&gt;
+                    </code>
+                 </pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--footer-->
+<div class="backtotop"><a href="#0" class="cd-top">Top</a></div>
+<script type="text/javascript" src="js/jquery-1.11.2.js"></script> 
+<script type="text/javascript" src="js/function.js"></script> 
+<script type="text/javascript" src="js/bootstrap.js"></script> 
+<script type="text/javascript" src="js/modernizr.js"></script> 
+<script type="text/javascript" src="js/slick.js"></script> 
+<script type="text/javascript" src="js/stickyheader.js"></script> 
+<script type="text/javascript" src="js/mega-dropdown.js"></script> 
+<script type="text/javascript" src="js/backtotop.js"></script> 
+<script type="text/javascript" src="js/parallax.js"></script> 
+<script type="text/javascript" src="js/animation.js"></script> 
+<script type="text/javascript" src="js/counter.js"></script> 
+<script type="text/javascript" src="js/number-counter.js"></script> 
+<script type="text/javascript" src="js/tooltip-viewport.js"></script> 
+<script type="text/javascript" src="js/ie10-viewport-bug-workaround.js"></script>
+<script type="text/javascript" src="js/bootstrapValidator.js"></script>
+<script type="text/javascript" src="js/formValidation.js"></script>
+</body>
+</html>

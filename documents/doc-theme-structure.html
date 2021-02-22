@@ -1,0 +1,211 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<meta name="description" content="">
+<meta name="author" content="">
+<title>Liven</title>
+<link href='https://fonts.googleapis.com/css?family=Arimo:400,700,700italic,400italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+<link href="css/master.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+<!--header-->
+<header>
+  <div class="header-white">
+    <div class="container">
+      <div class="row header-data">
+        <div class="col-md-2 col-xs-2 logo"><a href="../index.php"><img src="images/logo.png" alt="Logo Here" /></a></div>
+        <div class="col-md-8 pull-right">
+          <section class="top-bar-section">
+            <ul id="menu-main-menu-1">
+                  <li><a href="doc-map.html">Docs Map</a></li>
+                  <li><a href="doc-quick-guide.html">Quick Start Guide</a></li>
+                  <li><a href="doc-theme-structure.html" class="active">Theme Structure</a></li>
+            </ul>
+          </section>
+        </div>
+        <div class="clr"></div>
+      </div>
+    </div>
+  </div>
+  <!--fix header for mobile-->
+  <div class="fix-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2 col-xs-6 logo"><a href="../index.php"><img src="images/logo.png" alt="Logo Here" /></a></div>
+        <div class="col-xs-2 pull-right res-bar">
+          <nav class="nav is-fixed" role="navigation">
+            <button class="nav-toggle">
+            <span class="icon-menu"><span class="line line-1"></span><span class="line line-2"></span><span class="line line-3"></span></span>
+            </button>
+            <div class="nav-container">
+              <ul class="nav-menu menu">
+                <li class="menu-item"> <a href="doc-map.html" class="menu-link">Docs Map</a> </li>
+                <li class="menu-item"> <a href="doc-quick-guide.html" class="menu-link">Quick Start Guide</a></li>
+                <li class="menu-item"> <a href="doc-theme-structure.html" class="menu-link">Theme Structure</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="clr"></div>
+      </div>
+    </div>
+  </div>
+</header>
+<!--innertitle-->
+<div class="innerpagetitle">
+  <div class="container">
+    <h1><span>Docs - Theme structure</span></h1>
+    <div class="innerbreadcrumb"> <a href="#">Home</a> / <a href="#">Doc</a> / <a href="#" class="activelink">Theme Structure</a> </div>
+  </div>
+</div>
+<!--middle content-->
+<div class="middlecontent">
+  <div class="container">
+ 	<div class="row">
+    	<div class="col-md-12 quickguide">
+          <div class="margin-bottom-30">
+         <p>It is recommended that you keep minimal number of files on the website to improve the performance.</p> 
+        <p>We have merged some frequently used, logically and functionally connected css / js files into global files to reduce the file count.</p> 
+        <p>This page contains information about the content of css/js files. Other docs pages have HTML code examples with CSS/JS scripts they need to work properly, CSS classes to control element view and CSS classes and data attributes used by JS.</p>
+         <p>Please see detailed documentation for any component if you have any troubles with understanding them.</p>
+      </div>   
+         <div class="margin-bottom-30">
+         <h2>Bootstrap</h2>
+         <p>Our theme is based on Bootstrap framework. Bootstrap components that are included in our bootstrap build:</p>
+             <ul class="list-disc">
+                <li> <span class="yellow-txt-bg">Modals component</span> </li>
+                <li> <span class="yellow-txt-bg">Transition detection component</span> </li>
+                <li> <span class="yellow-txt-bg">Components animation component</span></li>
+             </ul>
+          </div>
+         <div class="margin-bottom-30">
+         <h2>Below are the files that you must always connect</h2>
+         <p><span class="yellow-txt-bg">master.css</span> must be defined in this css</p>
+             <ul class="list-disc">
+                <li><span>CSS - Always connect them in the header</span></li>
+                <li> <span class="yellow-txt-bg">		   http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic</span> </li>
+	         	<li>All css define in <span class="yellow-txt-bg">master.css</span> css like E.X. <span class="yellow-txt-bg">@import url("../css/theme.css");</span></li>
+             </ul><br>
+			 <ul class="list-disc">
+                <li><span>JS - Always connect them in the Footer</span></li>
+                <li> <span class="yellow-txt-bg">js/jquery-1.11.2.js</span> </li>
+                <li> <span class="yellow-txt-bg">js/fuction.js</span> </li>
+                <li> <span class="yellow-txt-bg">js/bootstrap.js</span> </li>
+                <li> <span class="yellow-txt-bg">js/modernizr.js</span> </li>
+                <li> <span class="yellow-txt-bg">js/backtotop.js</span> </li>
+             </ul>
+          </div>
+         <div class="margin-bottom-30">
+         <h2>CSS files short description:</h2>
+             <p><span class="yellow-txt-bg">master.css</span> is the main CSS file that is used by every page and it includes CSS styles that are used often. It includes files listed below:</p>
+             <ul class="list-disc">
+                <li><span class="yellow-txt-bg">animation.css</span> -  CSS for some conponents that have show/hide animation, like fadein (page load & scroll animation) </li>
+                <li><span class="yellow-txt-bg">themes.css</span> - CSS for theme component </li>
+                <li><span class="yellow-txt-bg">bootstrap.css</span> - CSS style </li>
+                <li><span class="yellow-txt-bg">font-awesome.css</span> - CSS for icon component </li>
+                <li><span class="yellow-txt-bg">stickyheader.css</span> - CSS for header component </li>
+                <li><span class="yellow-txt-bg">res-menu.css</span> - CSS for mobile menu component </li>
+                <li><span class="yellow-txt-bg">slick.css</span> - CSS for each slider example </li>
+                <li><span class="yellow-txt-bg">slick-theme.css</span> - CSS for each slider theme example </li>
+                <li><span class="yellow-txt-bg">full-thumb-slider-hover-effect.css</span> - CSS for center mode slider example and hover effect </li>
+                <li><span class="yellow-txt-bg">hover.css</span> - CSS for hover effects </li>
+                <li><span class="yellow-txt-bg">backtotop.css</span> - CSS for bottom to top scroll </li>
+                <li><span class="yellow-txt-bg">accordian.css</span> - CSS for accordian component </li>
+                <li><span class="yellow-txt-bg">tooltip-viewport.css</span> - CSS for tooltip component </li>
+                <li><span class="yellow-txt-bg">easy-responsive-tabs.css</span> - CSS for responsive tabs component </li>
+                <li><span class="yellow-txt-bg">mega-dropdown.css</span> - CSS for mega menu header component </li>
+                <li><span class="yellow-txt-bg">portfolio.css</span> - CSS for filter portfolio component </li>
+                <li><span class="yellow-txt-bg">bootstrapValidater.css</span> - CSS for Validation </li>
+                <li><span class="yellow-txt-bg">settings.css</span> - CSS for each slider Revolution example</li>
+                <li><span class="yellow-txt-bg">layers.css</span> - CSS for each slider Revolution example</li>
+                <li><span class="yellow-txt-bg">navigation.css</span> - CSS for each slider Revolution example </li>
+             </ul>
+          </div>
+         <div class="margin-bottom-30">
+         <h2>JS files along with their short descriptions are provided below:</h2>
+             <ul class="list-disc">
+                <li> <span class="yellow-txt-bg">jquery-1.11.2.js</span> contains jquery global component </li>
+                <li> <span class="yellow-txt-bg">fuction.js</span> - contains all function component </li>
+                <li> <span class="yellow-txt-bg">bootstrap.js</span> - contains bootstrap component </li>
+                <li> <span class="yellow-txt-bg">modernizr.js</span> - contains globle component </li>
+                <li> <span class="yellow-txt-bg">slick.js</span> - contains slick slider component </li>
+                <li> <span class="yellow-txt-bg">stickyheader.js</span> - contains sticky header component </li>
+                <li> <span class="yellow-txt-bg">mega-dropdown.js</span> - contains mega dropdown component </li>
+                <li> <span class="yellow-txt-bg">backtotop.js</span> - contains click to scroll top component </li>
+                <li> <span class="yellow-txt-bg">parallax.js</span> - contains parallax effect component </li>
+                <li> <span class="yellow-txt-bg">animation.js</span> - contains animation component </li>
+                <li> <span class="yellow-txt-bg">counter.js</span> - contains counter component </li>
+                <li> <span class="yellow-txt-bg">number-counter.js</span> - contains counter component </li>
+                <li> <span class="yellow-txt-bg">tooltip-viewport.js</span> - contains tooltip-vieport component </li>
+                <li> <span class="yellow-txt-bg">ie10-viewport-bug-workaround.js</span> contains internet explorer component </li>
+                <li> <span class="yellow-txt-bg">accordian.js</span> - contains accordion component </li>
+                <li> <span class="yellow-txt-bg">easyResponsiveTabs.js</span> - contains easyResponsiveTabs component </li>
+                <li> <span class="yellow-txt-bg">jquery.popup.leanModa.min.js</span> - contains popup model component </li>
+                <li> <span class="yellow-txt-bg">jquery.portfolio.js</span> - contains filter portfolio component </li>
+                <li> <span class="yellow-txt-bg">jquery.p-gallery.js</span> - contains like grid layout component</li>
+                <li> <span class="yellow-txt-bg">BoostrapValidater.js</span> - form Validation bootstrap component</li>
+                <li> <span class="yellow-txt-bg">formValidation.js</span> - form Validation component</li>
+                <li> <span class="yellow-txt-bg">js/revoluation/jquery.themepunch.tools.min.js</span> - Contains of Slider Revolution component </li>
+                <li> <span class="yellow-txt-bg">js/revoluation/jquery.themepunch.revolution.min.js</span> - Contains of Slider Revolution component </li>
+                <li> <span class="yellow-txt-bg">js/revoluation/revolution.extension.actions.min.js</span> - Contains of Slider Revolution component </li>
+                <li> <span class="yellow-txt-bg">js/revoluation/revolution.extension.carousel.min.js</span> - Contains of Slider Revolution component </li>
+                <li> <span class="yellow-txt-bg">js/revoluation/revolution.extension.kenburn.min.js</span> - Contains of Slider Revolution component </li>
+                <li> <span class="yellow-txt-bg">js/revoluation/revolution.extension.layeranimation.min.js</span> - Contains of Slider Revolution component </li>
+                <li> <span class="yellow-txt-bg">js/revoluation/revolution.extension.migration.min.js</span> - Contains of Slider Revolution component </li>
+                <li> <span class="yellow-txt-bg">js/revoluation/revolution.extension.navigation.min.js</span> - Contains of Slider Revolution component </li>
+                <li> <span class="yellow-txt-bg">js/revoluation/revolution.extension.parallax.min.js</span> - Contains of Slider Revolution component </li>
+                <li> <span class="yellow-txt-bg">js/revoluation/revolution.extension.slideanims.min.js</span> - Contains of Slider Revolution component </li>
+                <li> <span class="yellow-txt-bg">js/revoluation/revolution.extension.video.min.js</span> - Contains of Slider Revolution component </li>
+                <li> <span class="yellow-txt-bg">js/revoluation/revoluationfunction.js</span>  - Contains of Slider Revolution component</li>
+                
+             </ul>
+          </div> 
+        </div>
+    </div>
+  </div>
+</div>
+<!--footer-->
+<div class="backtotop"><a href="#0" class="cd-top">Top</a></div>
+<script type="text/javascript" src="js/jquery-1.11.2.js"></script> 
+<script type="text/javascript" src="js/function.js"></script> 
+<script type="text/javascript" src="js/bootstrap.js"></script> 
+<script type="text/javascript" src="js/modernizr.js"></script> 
+<script type="text/javascript" src="js/slick.js"></script> 
+<script type="text/javascript" src="js/stickyheader.js"></script> 
+<script type="text/javascript" src="js/mega-dropdown.js"></script> 
+<script type="text/javascript" src="js/backtotop.js"></script> 
+<script type="text/javascript" src="js/parallax.js"></script>
+<script type="text/javascript" src="js/animation.js"></script>
+<script type="text/javascript" src="js/counter.js"></script>
+<script type="text/javascript" src="js/number-counter.js"></script>
+<script type="text/javascript" src="js/tooltip-viewport.js"></script>
+<script type="text/javascript" src="js/ie10-viewport-bug-workaround.js"></script>
+<script type="text/javascript" src="js/bootstrapValidator.js"></script>
+<script type="text/javascript" src="js/formValidation.js"></script>
+<script type="text/javascript">
+		var recaptcha2 ;
+		var recaptcha1 ;
+		var captchaContainer = null;
+    	var CaptchaCallback = function() {
+      		grecaptcha.render('RecaptchaField2', {
+        		'sitekey' : '6LdqHBATAAAAAPoEZE2GZXzTS-03N5DJLFNTrC7_',
+        		'callback' : function(response) {
+         			recaptcha2=response;
+        		}
+      		});
+	 		grecaptcha.render('RecaptchaField1', {
+        		'sitekey' : '6LdqHBATAAAAAPoEZE2GZXzTS-03N5DJLFNTrC7_',
+        		'callback' : function(response) {
+              		recaptcha1=response;
+        		}
+      		});
+    	};
+	</script>
+    <script src="//www.google.com/recaptcha/api.js?onload=CaptchaCallback&amp;render=explicit" async defer></script></body>
+</html>

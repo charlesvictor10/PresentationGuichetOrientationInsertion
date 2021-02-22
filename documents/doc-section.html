@@ -1,0 +1,269 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<meta name="description" content="">
+<meta name="author" content="">
+<title>Liven</title>
+<link href='https://fonts.googleapis.com/css?family=Arimo:400,700,700italic,400italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+<link href="css/master.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+<!--header-->
+<header>
+  <div class="header-white">
+    <div class="container">
+      <div class="row header-data">
+        <div class="col-md-2 col-xs-2 logo"><a href="../index.php"><img src="images/logo.png" alt="Logo Here" /></a></div>
+        <div class="col-md-8 pull-right">
+          <section class="top-bar-section">
+            <ul id="menu-main-menu-1">
+                  <li><a href="doc-map.html" class="active">Docs Map</a></li>
+                  <li><a href="doc-quick-guide.html">Quick Start Guide</a></li>
+                  <li><a href="doc-theme-structure.html">Theme Structure</a></li>
+            </ul>
+          </section>
+        </div>
+        <div class="clr"></div>
+      </div>
+    </div>
+  </div>
+  <!--fix header for mobile-->
+  <div class="fix-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2 col-xs-6 logo"><a href="../index.php"><img src="images/logo.png" alt="Logo Here" /></a></div>
+        <div class="col-xs-2 pull-right res-bar">
+          <nav class="nav is-fixed" role="navigation">
+            <button class="nav-toggle">
+            <span class="icon-menu"><span class="line line-1"></span><span class="line line-2"></span><span class="line line-3"></span></span>
+            </button>
+            <div class="nav-container">
+              <ul class="nav-menu menu">
+                <li class="menu-item"> <a href="doc-map.html" class="menu-link">Docs Map</a> </li>
+                <li class="menu-item"> <a href="doc-quick-guide.html" class="menu-link">Quick Start Guide</a></li>
+                <li class="menu-item"> <a href="doc-theme-structure.html" class="menu-link">Theme Structure</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="clr"></div>
+      </div>
+    </div>
+  </div>
+</header>
+  
+<!--innertitle-->
+<div class="innerpagetitle">
+  <div class="container">
+    <h1><span>Docs - Section</span></h1>
+    <div class="innerbreadcrumb"> <a href="#">Home</a> / <a href="#">Doc</a> / <a href="#" class="activelink">Docs - Section</a> </div>
+  </div>
+</div>
+<!--middle content-->
+<div class="middlecontent">
+  <div class="container">
+ 	<div class="row">
+    	<div class="col-md-12 quickguide">
+        	<p>To create section style, you need to use <span class="yellow-txt-bg">theme.css</span></p>
+             <p>To set the width of section wrapper to 100%, you need to use <span class="yellow-txt-bg">.sec-row </span> class.</p>
+       		 <p>We have provided five section styles for section wrapper. You can change the color and parallax image of section wrapper background.</p>
+             <p><strong>Section Wrapper Styles</strong></p>
+             <ul class="list-disc">
+             	<li><span class="yellow-txt-bg">.sec-gray-light </span>- gray section color scheme</li>
+                <li><span class="yellow-txt-bg">.sec-gray-dark </span>- dark gray section color scheme</li>
+                <li><span class="yellow-txt-bg">.sec-black </span>- black section color scheme</li>
+                <li><span class="yellow-txt-bg">.sec-blue </span>- blue section color scheme</li>
+                <li><span class="yellow-txt-bg">.sec-bg </span>- parallax section contains an image with fixed position in section wrapper background.
+             </ul>
+        </div>
+    </div>
+  </div>
+<div class="sec-col-margin">
+  <section class="sec-row sec-gray-light">
+  <div class="container">
+    <div class=" row wow fadeInDown animated animated" style="visibility: visible; animation-name: fadeInDown;" data-wow-animation-name="fadeInDown">
+    	<div class="col-md-12">
+        	<h1 class="text-left">light gray Section</h1>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+        </div>
+    </div>
+  </div>
+</section>
+  <div class="container sec-col-margin">
+    <div class="row">   
+     <div class="col-lg-12">
+      <pre class="codeprint">        
+      <span class="tagelement">&lt;section</span><span class="tagelement"> </span>&nbsp;<span class="atn">class</span><span class="atn">=</span><span class="cne">"sec-row sec-gray-light"</span><span class="tagelement">&gt;</span>
+             <span class="tagelement">&lt;div</span>&nbsp;&nbsp;<span class="atn">class</span><span class="atn">=</span><span class="cne">"container"</span><span class="tagelement">&gt;</span>
+                 <span class="tagelement">&lt;div</span>&nbsp;&nbsp;<span class="atn">class</span><span class="atn">=</span><span class="cne">"row"</span><span class="tagelement">&gt;</span>
+                    <span class="tagelement">&lt;div</span>&nbsp;&nbsp;<span class="atn">class</span><span class="atn">=</span><span class="cne">"col-md-12"</span><span class="tagelement">&gt;</span>
+                 	<span class="tagelement">&lt;h1</span>&nbsp;&nbsp;<span class="atn">class</span><span class="atn">=</span><span class="cne">"text-left"</span><span class="tagelement">&gt;</span><span class="com">&lt;!-- Your Titile goes here --&gt;</span><span class="tagelement">&lt;/h1&gt;</span>
+                 	<span class="tagelement">&lt;p</span><span class="tagelement">&gt;</span><span class="com">&lt;!-- Your content goes here --&gt;</span><span class="tagelement">&lt;/p&gt;</span>
+                    <span class="tagelement">&lt;/div&gt;</span>
+                 <span class="tagelement">&lt;/div&gt;</span>
+              <span class="tagelement">&lt;/div&gt;</span>     
+      <span class="tagelement">&lt;/section&gt;</span>
+      </pre>
+     </div>   
+    </div>
+  </div>
+</div>
+<div class="sec-col-margin">
+  <section class="sec-row sec-gray-dark">
+  <div class="container">
+    <div class="row wow fadeInDown animated animated" style="visibility: visible; animation-name: fadeInDown;" data-wow-animation-name="fadeInDown">
+    	<div class="col-md-12">
+        	<h1 class="text-left"><span>Dark gray Section</span></h1>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+        </div>
+    </div>
+  </div>
+</section>
+  <div class="container sec-col-margin">
+    <div class="row">   
+     <div class="col-lg-12">
+        <pre class="codeprint">        
+      <span class="tagelement">&lt;section</span><span class="tagelement"> </span><span class="atn">class</span><span class="atn">=</span><span class="cne">"sec-row sec-gray-dark"</span><span class="tagelement">&gt;</span>
+             <span class="tagelement">&lt;div</span>&nbsp;&nbsp;<span class="atn">class</span><span class="atn">=</span><span class="cne">"container"</span><span class="tagelement">&gt;</span>
+                 <span class="tagelement">&lt;div</span>&nbsp;&nbsp;<span class="atn">class</span><span class="atn">=</span><span class="cne">"row"</span><span class="tagelement">&gt;</span>
+                   <span class="tagelement">&lt;div</span>&nbsp;&nbsp;<span class="atn">class</span><span class="atn">=</span><span class="cne">"col-md-12"</span><span class="tagelement">&gt;</span>
+                 	<span class="tagelement">&lt;h1</span>&nbsp;&nbsp;<span class="atn">class</span><span class="atn">=</span><span class="cne">"text-left"</span><span class="tagelement">&gt;</span><span class="com">&lt;!-- Your Titile goes here --&gt;</span><span class="tagelement">&lt;/h1&gt;</span>
+                 	<span class="tagelement">&lt;p</span><span class="tagelement">&gt;</span><span class="com">&lt;!-- Your content goes here --&gt;</span><span class="tagelement">&lt;/p&gt;</span>
+                    <span class="tagelement">&lt;/div&gt;</span>
+                 <span class="tagelement">&lt;/div&gt;</span>
+              <span class="tagelement">&lt;/div&gt;</span>     
+      <span class="tagelement">&lt;/section&gt;</span>
+      </pre>
+     </div>   
+    </div>
+  </div>
+</div>
+<div class="sec-col-margin">
+  <section class="sec-row sec-black">
+  <div class="container">
+    <div class="row wow fadeInDown animated animated" style="visibility: visible; animation-name: fadeInDown;" data-wow-animation-name="fadeInDown">
+    	<div class="col-md-12">
+        	<h1 class="text-left"><span>Black Section</span></h1>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+        </div>
+    </div>
+  </div>
+</section>
+  <div class="container sec-col-margin">
+    <div class="row">   
+     <div class="col-lg-12">
+        <pre class="codeprint">        
+      <span class="tagelement">&lt;section</span><span class="tagelement"> </span>&nbsp;<span class="atn">class</span><span class="atn">=</span><span class="cne">"sec-row sec-black"</span><span class="tagelement">&gt;</span>
+             <span class="tagelement">&lt;div</span>&nbsp;&nbsp;<span class="atn">class</span><span class="atn">=</span><span class="cne">"container"</span><span class="tagelement">&gt;</span>
+                 <span class="tagelement">&lt;div</span>&nbsp;&nbsp;<span class="atn">class</span><span class="atn">=</span><span class="cne">"row"</span><span class="tagelement">&gt;</span>
+                    <span class="tagelement">&lt;div</span>&nbsp;&nbsp;<span class="atn">class</span><span class="atn">=</span><span class="cne">"col-md-12"</span><span class="tagelement">&gt;</span>
+                 	<span class="tagelement">&lt;h1</span>&nbsp;&nbsp;<span class="atn">class</span><span class="atn">=</span><span class="cne">"text-left"</span><span class="tagelement">&gt;</span><span class="com">&lt;!-- Your Titile goes here --&gt;</span><span class="tagelement">&lt;/h1&gt;</span>
+                 	<span class="tagelement">&lt;p</span><span class="tagelement">&gt;</span><span class="com">&lt;!-- Your content goes here --&gt;</span><span class="tagelement">&lt;/p&gt;</span>
+                    <span class="tagelement">&lt;/div&gt;</span>
+                 <span class="tagelement">&lt;/div&gt;</span>
+              <span class="tagelement">&lt;/div&gt;</span>     
+      <span class="tagelement">&lt;/section&gt;</span>
+      </pre>
+     </div>   
+    </div>
+  </div>
+</div>
+<div class="sec-col-margin">
+  <section class="sec-row sec-blue">
+  <div class="container">
+    <div class="row wow fadeInDown animated animated" style="visibility: visible; animation-name: fadeInDown;" data-wow-animation-name="fadeInDown">
+    	<div class="col-md-12">
+        	<h1 class="text-left"><span>Black Section</span></h1>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+        </div>
+    </div>
+  </div>
+</section>
+  <div class="container sec-col-margin">
+    <div class="row">   
+     <div class="col-lg-12">
+        <pre class="codeprint">        
+      <span class="tagelement">&lt;section</span><span class="tagelement"></span>&nbsp;<span class="atn">class</span><span class="atn">=</span><span class="cne">"sec-row sec-blue"</span><span class="tagelement">&gt;</span>
+             <span class="tagelement">&lt;div</span>&nbsp;&nbsp;<span class="atn">class</span><span class="atn">=</span><span class="cne">"container"</span><span class="tagelement">&gt;</span>
+                 <span class="tagelement">&lt;div</span>&nbsp;&nbsp;<span class="atn">class</span><span class="atn">=</span><span class="cne">"row"</span><span class="tagelement">&gt;</span>
+                    <span class="tagelement">&lt;div</span>&nbsp;&nbsp;<span class="atn">class</span><span class="atn">=</span><span class="cne">"col-md-12"</span><span class="tagelement">&gt;</span>
+                 	<span class="tagelement">&lt;h1</span>&nbsp;&nbsp;<span class="atn">class</span><span class="atn">=</span><span class="cne">"text-left"</span><span class="tagelement">&gt;</span><span class="com">&lt;!-- Your Titile goes here --&gt;</span><span class="tagelement">&lt;/h1&gt;</span>
+                 	<span class="tagelement">&lt;p</span><span class="tagelement">&gt;</span><span class="com">&lt;!-- Your content goes here --&gt;</span><span class="tagelement">&lt;/p&gt;</span>
+                    <span class="tagelement">&lt;/div&gt;</span>
+                 <span class="tagelement">&lt;/div&gt;</span>
+              <span class="tagelement">&lt;/div&gt;</span>     
+      <span class="tagelement">&lt;/section&gt;</span>
+      </pre>
+     </div>   
+    </div>
+  </div>
+</div>
+<div class="sec-col-margin">
+  <section class="sec-bg">
+  <div class="sec-overlay-black">
+	  <div class="container">
+    <div class="row wow fadeInDown animated animated" style="visibility: visible; animation-name: fadeInDown;" data-wow-animation-name="fadeInDown">
+    	<div class="col-md-12">
+        	<h1 class="text-left"><span>Parallax Section</span></h1>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+        </div>
+    </div>
+  </div>
+  </div>
+</section>
+  <div class="container sec-col-margin">
+    <div class="row">   
+     <div class="col-lg-12">
+        <pre class="codeprint">        
+      <span class="tagelement">&lt;section</span><span class="tagelement"></span>&nbsp;<span class="atn">class</span><span class="atn">=</span><span class="cne">"sec-bg"</span><span class="tagelement">&gt;</span>
+      	<span class="tagelement">&lt;div</span><span class="tagelement">&gt;</span>&nbsp;&nbsp;<span class="atn">class</span><span class="atn">=</span><span class="cne">"sec-overlay-black"</span><span class="tagelement">&gt;</span>
+             <span class="tagelement">&lt;div</span>&nbsp;&nbsp;<span class="atn">class</span><span class="atn">=</span><span class="cne">"container"</span><span class="tagelement">&gt;</span>
+                 <span class="tagelement">&lt;div</span>&nbsp;&nbsp;<span class="atn">class</span><span class="atn">=</span><span class="cne">"row"</span><span class="tagelement">&gt;</span>
+                      <span class="tagelement">&lt;div</span>&nbsp;&nbsp;<span class="atn">class</span><span class="atn">=</span><span class="cne">"col-md-12"</span><span class="tagelement">&gt;</span>
+                            <span class="tagelement">&lt;h1</span>&nbsp;&nbsp;<span class="atn">class</span><span class="atn">=</span><span class="cne">"text-left"</span><span class="tagelement">&gt;</span><span class="com">&lt;!-- Your Titile goes here --&gt;</span><span class="tagelement">&lt;/h1&gt;</span>
+                            <span class="tagelement">&lt;p</span><span class="tagelement">&gt;</span><span class="com">&lt;!-- Your content goes here --&gt;</span><span class="tagelement">&lt;/p&gt;</span>
+                      <span class="tagelement">&lt;/div&gt;</span>
+                 <span class="tagelement">&lt;/div&gt;</span>
+              <span class="tagelement">&lt;/div&gt;</span>     
+          <span class="tagelement">&lt;/div&gt;</span>         
+      <span class="tagelement">&lt;/section&gt;</span>
+      </pre>
+     </div>   
+    </div>
+  </div>
+</div>
+
+
+
+</div>
+
+  
+  
+  
+
+<!--footer-->
+<div class="backtotop"><a href="#0" class="cd-top">Top</a></div>
+<script type="text/javascript" src="js/jquery-1.11.2.js"></script> 
+<script type="text/javascript" src="js/function.js"></script> 
+<script type="text/javascript" src="js/bootstrap.js"></script> 
+<script type="text/javascript" src="js/modernizr.js"></script> 
+<script type="text/javascript" src="js/slick.js"></script> 
+<script type="text/javascript" src="js/stickyheader.js"></script> 
+<script type="text/javascript" src="js/mega-dropdown.js"></script> 
+<script type="text/javascript" src="js/backtotop.js"></script> 
+<script type="text/javascript" src="js/parallax.js"></script>
+<script type="text/javascript" src="js/animation.js"></script>
+<script type="text/javascript" src="js/counter.js"></script>
+<script type="text/javascript" src="js/number-counter.js"></script>
+<script type="text/javascript" src="js/tooltip-viewport.js"></script>
+<script type="text/javascript" src="js/ie10-viewport-bug-workaround.js"></script>
+<script type="text/javascript" src="js/bootstrapValidator.js"></script>
+<script type="text/javascript" src="js/formValidation.js"></script>
+</body>
+</html>
